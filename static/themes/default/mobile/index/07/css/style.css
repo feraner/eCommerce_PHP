@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.banner{margin-bottom:.625rem; position:relative;}
+.banner .btn{position:absolute; left:0; width:100%; bottom:.625rem; text-align:center;}
+.banner .btn span{display:inline-block; content:''; width:.3215rem; border-radius:.3215rem; background:#fff; margin:0 .1%; height:.3215rem;}
+.banner .btn span.on{background:#ccc;}
+.banner img{vertical-align:middle;}
+.banner .element{width:49.375%; float:left;}
+.banner .element:nth-child(even){float:right;}
+.banner:last-of-type{margin-bottom:0;}
+
+.h-container h2{line-height:3rem; height:3rem; position:relative; font-size:.875rem; color:#333; padding-left:9.9375%; border-bottom:.0625rem #b5b5b5 solid; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.h-container h2:after{position:absolute; left:91.25%; top:50%; background:url(../images/container_h2.jpg) no-repeat 0 0; background-size:100%; width:4.0625%; height:.625rem; margin-top:-.3125rem; -webkit-transition:-webkit-transform .3s linear 0s; transition:transform .3s linear 0s; content:'';}
+.h-container h2 .hlogo{margin-left:-15%; margin-right:2.5%; width:23.75%;}
+.h-container.on h2:after{-webkit-transform:rotate(180deg); transform:rotate(180deg);}
+.h-container .list{background:#ddd; display:none;}
+.h-container.on .list{}
+.h-container .list .item{height:3rem; line-height:3rem; padding-left:9.25%; -webkit-box-sizing:border-box; box-sizing:border-box; width:50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.h-container .list .item:nth-of-type(odd){border-right:.0625rem solid #c9c9c9;}
+.h-container .list .item a{font-size:.75rem; color:#242424;}
+.h-container .list .line{height:0; overflow:hidden; font-size:0; border-bottom:.0625rem solid #c9c9c9; clear:both; content:''; font-size:0;}

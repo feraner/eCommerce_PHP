@@ -1,0 +1,51 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #bodyer, .w_1200 #bodyer .wide{min-width:auto;}
+.w_1200 #footer_outer{min-width:980px;}
+/***************************宽屏样式(end)***************************/
+
+body{background:#fff;}
+#bodyer{background-color:#fff;}
+#bodyer .wide{position:relative; width:1164px; padding:0 21px 0 15px; min-width:1164px;}
+#bodyer .logo{position:absolute; left:0; top:0;}
+#bodyer .main_middle{background:#ebe9ea;}
+#bodyer .banner_1{height:267px; overflow:hidden; cursor:pointer;}
+#bodyer .banner_2{height:510px; overflow:hidden; padding:29px 0 50px; background:#fff; cursor:pointer;}
+
+#bodyer, #bodyer .wide, #footer_outer{min-width:1164px;}
+
+#bodyer .main_top{height:661px; cursor:pointer;}
+
+.pro_list{padding:50px 0;}
+.pro_list .list_menu{height:53px;}
+.pro_list .list_menu a{width:153px; height:53px; line-height:53px; display:inline-block; overflow:hidden; background:#dedcdd; text-align:center; font-size:18px; text-decoration:none; margin-right:5px;}
+.pro_list .list_menu a.current{background:#a5071d; color:#fff;}
+.pro_list .list_body{border:1px #bbb solid; background:#fff;}
+.pro_list .list_body .bd_none{border:0;}
+.pro_list .list_box{width:873px; overflow:hidden;}
+
+.pro_item{width:289px; overflow:hidden; border-right:1px #bbb solid;}
+.pro_item>dt{margin:56px 29px 10px; text-align:center; height:232px; overflow:hidden;}
+.pro_item>dt img{max-width:100%; max-height:100%;}
+.pro_item>dd{margin:0 29px;}
+.pro_item .pro_discount{height:25px; line-height:25px; color:#fff; background:#b93334; padding:0 5px; overflow:hidden; display:inline-block; margin-bottom:9px;}
+.pro_item .pro_name{line-height:16px; height:33px; overflow:hidden; margin-bottom:9px; color:#444;}
+.pro_item .pro_price{border-top:1px #bbb solid; height:67px; line-height:67px; font-size:15px; color:#444; font-weight:bold; margin:0;}
+.pro_item .pro_price>div{width:50%; text-align:center; float:left; display:inline;}
+.pro_item .pro_price .pro_price_0{color:#444;}
+.pro_item .pro_price .pro_price_1{color:#1964c1;}
+.pro_item:hover{background:#f2f2f2;}
+.pro_item:hover .pro_price_0{background:#cb3737; color:#fff;}
+.pro_item:hover .pro_price_1{background:#1964c1; color:#fff;}
+
+.pro_list_oth .list_body{border-right:0; border-bottom:0;}
+.pro_list_oth .pro_item{width:290px; border-bottom:1px #bbb solid;}
+.pro_list_oth .pro_item>dt{margin:9px 33px 10px; text-align:center; height:167px; overflow:hidden;}
+.pro_list_oth .pro_item>dt img{max-width:100%; max-height:100%;}
+.pro_list_oth .pro_item>dd{margin:0 33px;}
+.pro_list_oth .pro_item .pro_price{margin:0;}
+.pro_list_oth .pro_item .pro_name{margin-bottom:9px;}

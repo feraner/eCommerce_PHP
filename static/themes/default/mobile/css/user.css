@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+.verification_box{padding:2%; margin:2%; border:none; background:#f5fdf3;line-height: 1.1rem;}
+.verification_box strong{font-weight:700;}
+.verification_title{font-size:0.875rem; line-height:1.4rem; margin-bottom:0.9rem; font-weight:700;}
+.verification_title>i{display: none;}
+.verification_info{padding:0 1%;}
+.verification_info dt{margin-bottom:0.4rem; font-weight:700;}
+.verification_info dt strong{color:#e71;}
+.verification_info dd{margin-bottom:1rem;}
+.verification_info dd>p{margin:0.6rem 0;}
+.verification_info dd .btn_list{margin-top:1rem; line-height:1.5rem;}
+.verify_now_btn{border-radius:0.2rem; -ms-border-radius:0.2rem; -moz-border-radius:0.2rem; -webkit-border-radius:0.2rem; padding:0 1rem; height:1.5rem; line-height:1.5rem; color:#fff; display:inline-block; float:left; cursor:pointer; font-size:0.875rem; margin-right:1rem; overflow:hidden;}
+.verify_now_btn:hover{text-decoration:none; color:#fff;}
+.guide_btn{margin:0 0.2rem;}
+
+/*inbox*/
+#user .no_data{ display:none;}
+#user .global_tab.tab_inbox li{ width:33.3%;}
+#user .inbox_tab_con{ height:calc(100vh - 3.125rem - 3.125rem - 2px - 1.875rem); margin:0.9375rem; overflow:auto;}
+#user .inbox_tab_con .tab_con{ display:none;}
+#user .inbox_tab_con .tab_con:first-child{ display:block;}
+#user .inbox_tab_con .more{ text-align:center; height:1.875rem; line-height:1.875rem; background:url(../images/loading.gif) center no-repeat; background-size:1.5625rem auto;}
+#user .inbox_tab_con .item{ padding:0.625rem 0; padding-left:2.1875rem; border-bottom:1px solid #eee; background:url(../images/u_icon_inbox_list_bg.png) 0 center no-repeat; background-size:auto 1.25rem;}
+#user .inbox_tab_con .item.read{ background:url(../images/u_icon_inbox_list_bg_cur.png) 2px center no-repeat; background-size:auto 1.5rem;}
+#user .inbox_tab_con .item .title{ color:#333; line-height:1.25rem; font-size:1rem; float:left; width:calc(100% - 5.625rem);}
+#user .inbox_tab_con .item .date{ color:#999; float:right; width:5.625rem; text-align:right; line-height:1.25rem;}
+
+#user .inbox_tab_con form .rows{ padding:0.3125rem;}
+#user .inbox_tab_con form .rows>label{ font-size:0.875rem; line-height:1.25rem;}
+#user .inbox_tab_con form .rows>input{ width:100%; height:2.1875rem; line-height:2.1875rem; text-indent:0.625rem; border:1px solid #ddd; box-sizing:border-box; border-radius:2px;}
+#user .inbox_tab_con form .rows>textarea{ width:100%; height:6.25rem; border:1px solid #ddd; box-sizing:border-box; padding:0.625rem; resize:none; border-radius:2px;}
+#user .inbox_tab_con form .rows>input:focus,.inbox_tab_con form .rows>textarea:focus{ box-shadow:0 0 0.75rem 0 #eba912; border:1px solid #f9b61e;}
+#user .inbox_tab_con form .rows .upload_box{ position:relative; margin-top:0.625rem;}
+#user .inbox_tab_con form .rows .upload_btn{ width:4.0625rem; height:4.0625rem;}
+#user .inbox_tab_con form .rows .upload_btn img{ width:100%; height:100%;}
+#user .inbox_tab_con form .rows .upload_file{ width:100%; height:100%; position:absolute; left:0; top:0; opacity:0;}
+#user .inbox_tab_con form .submit_btn{ display:block; width:100%; height:40px; line-height:40px; text-align:center; background:#fe9901; color:#fff; font-size:0.875rem; border-radius:2px; margin-top:1.25rem;}
+
+.inbox_detail_pop{ width:100%; height:100%; position:absolute; left:0; top:0; background:rgba(0,0,0,0.8); display:none;}
+.inbox_detail_pop .box{ margin:0 20px; background:#fff; box-sizing:border-box; padding:0.625rem; border-radius:3px; min-height:18.75rem;}
+.inbox_detail_pop .box .title{ font-size:1.125rem; line-height:1.375rem;}
+.inbox_detail_pop .box .date{ font-size:0.875rem; color:#999; text-align:right; margin-top:0.5rem; border-bottom:1px solid #efefef; padding-bottom:0.625rem;}
+.inbox_detail_pop .box .con{ color:#999; line-height:1.25rem; margin:0.9375rem 0;}
+.inbox_detail_pop .box .img img{ max-width:100%; max-height:100%;}

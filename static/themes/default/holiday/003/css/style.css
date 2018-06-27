@@ -1,0 +1,66 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #bodyer, .w_1200 #bodyer .wide{min-width:auto;}
+.w_1200 #footer_outer{min-width:980px;}
+/***************************宽屏样式(end)***************************/
+
+body{background:#fff;}
+#bodyer{background-color:#04618d;}
+#bodyer .wide{position:relative;}
+#bodyer .logo{position:absolute; left:0; top:0;}
+
+#bodyer, #bodyer .wide, #footer_outer{min-width:1200px;}
+
+.holiday_header{height:604px; cursor:pointer;}
+
+.holiday_discount{background:url(../images/discount_bg.jpg) no-repeat top center; height:900px;}
+.holiday_discount .holiday_discount_head{height:57px; line-height:57px; text-align:center; font-size:22px; padding-top:51px; color:#e20e2c;}
+.holiday_discount .holiday_discount_body{padding:11px 19px 0;}
+
+.pro_list{margin-top:80px; padding:8px 0; background:#18a9c4;}
+.pro_list .list_head{height:39px; line-height:39px; text-indent:12px; color:#fff; font-size:18px;}
+.pro_list .list_body{background:url(../images/list_bg.png); padding:0 10px;}
+
+.pro_box{width:265px; height:320px; overflow:hidden; background:#e60b25; padding:5px; margin:0 6px;}
+.pro_box>dd{overflow:hidden;}
+.pro_box .time{height:38px; line-height:38px; background:#f3f3f3; text-align:right; padding-right:10px;}
+.pro_box .time span{display:inline-block; height:22px; line-height:22px; padding:0 3px; color:#fff; text-align:center; background:#ea091e; margin:0 5px;}
+.pro_box .img{height:190px; background:#fff; text-align:center;}
+.pro_box .img img{max-width:100%; max-height:100%;}
+.pro_box .name{height:30px; line-height:30px; background:#dedede; text-indent:16px;}
+.pro_box .view{height:54px; padding-top:8px; position:relative;}
+.pro_box .price{height:27px; line-height:27px; color:#fff;}
+.pro_box .cur_price{font-size:14px;}
+.pro_box .cur_price b{font-size:18px;}
+.pro_box .old_price{text-decoration:line-through;}
+.pro_box .buy_btn{display:block; position:absolute; right:0; bottom:0;width: 68px;height: 40px;padding:6px 35px 8px 20px;font-size: 22px;color: #ea091e;background: url(../images/buy_it.png) no-repeat center center;text-decoration: none;}
+.pro_box .buy_btn span{display: block;width: 100%;height: 40px;line-height: 40px;overflow: hidden;}
+
+.pro_item{width:230px; overflow:hidden; margin:0 3px; padding-bottom:9px;}
+.pro_item>dt{padding:14px 14px 6px; text-align:center; height:190px;}
+.pro_item>dt img{max-width:100%; max-height:100%;}
+.pro_item>dd{padding:0 14px;}
+.pro_item .pro_name{line-height:22px; height:44px; overflow:hidden;}
+.pro_item .pro_price{height:17px; font-size:15px; color:#c00; font-weight:bold; height:28px; line-height:28px;}
+.pro_item .pro_view{height:28px; line-height:28px; text-align:center; background:#a40000; color:#fff; font-size:14px;}
+
+#main{margin-top:66px; background:url(../images/bottom_bg.jpg); padding-bottom:45px;}
+#main .middle_bg{background:url(../images/middle_bg.png) no-repeat top center; height:39px;}
+
+.holiday_banner{height:727px; padding:0 27px; margin-top:60px;}
+.holiday_banner .banner_head{height:55px; line-height:55px; padding-top:10px; font-size:16px; color:#715f00; text-indent:57px;}
+.holiday_banner .fl{overflow:hidden;}
+.holiday_banner .t0{width:486px; height:303px; margin-right:28px; margin-bottom:28px;}
+.holiday_banner .t1{width:302px; height:303px; margin-bottom:28px;}
+.holiday_banner .t2{width:303px; height:302px; margin-right:27px;}
+.holiday_banner .t3{width:486px; height:302px;}
+.holiday_banner .t4{width:302px; height:633px;}
+.holiday_banner .banner_box{width:816px; margin-right:28px;}
+.banner_0{background:url(../images/banner_0.png) no-repeat top center;}
+.banner_1{background:url(../images/banner_1.png) no-repeat top center;}
+.banner_1 .banner_head{color:#fff;}
+.banner_1 .banner_box{width:816px; margin-right:0; margin-left:28px;}

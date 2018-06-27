@@ -1,0 +1,44 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+/*.w_1200 .main .righter{width:933px;}*/
+.w_1200 .main .index_banner, .w_1200 .main .index_banner .bd ul li, .w_1200 .main .index_banner .bd ul li a, .w_1200 .main .index_banner .bd img{width:950px; height:469px;}
+.w_1200 .main .banner_list li{width:236px; height:230px;}
+
+.w_1200 .topad li .img{left:64px;}
+
+.w_1200 .index_prod .item{width:192px; margin:20px 0 20px 20px;}
+.w_1200 .index_prod .item .img{width:192px; height:192px;}
+.w_1200 .index_prod .item .review{background-position:1px -74px;}
+/***************************宽屏样式(end)***************************/
+
+.main{margin:20px auto;}
+.main .lefter{width:238px;}
+.main .lefter .left_ad{padding:10px 0;}
+.main .righter{/*width:725px;*/width: 100%;}
+.main .index_banner, .main .index_banner .bd ul li, .main .index_banner .bd ul li a, .main .index_banner .bd img{width:785px; height:365px;}
+.main .index_banner img{width:100%; height:100%;}
+.main .banner_list li{width:183px; height:178px; overflow:hidden; display:block;}
+.main .banner_list li:first-child{margin-bottom:9px;}
+
+.index_main{padding:0 10px;}
+
+.index_prod{margin-top:20px;}
+.index_prod .index_prod_hd{height:50px; line-height:41px; position:relative; background:url(../images/index.jpg) no-repeat 251px top;}
+.index_prod .index_prod_hd>h2{height:25px; line-height:25px; border-bottom:1px #000 solid; font-size:16px; font-weight:bold; margin-left:50px; padding-left:8px;}
+.index_prod .index_prod_hd>.brief{height:24px; line-height:24px; margin-left:50px; padding-left:8px; color:#5d5d5d;}
+.index_prod .index_prod_hd>.img{width:36px; height:36px; position:absolute; left:0; top:0; padding:7px; border-radius:50px; background-color:#000;}
+.index_prod .item{width:164px; margin:20px 0 20px 10px; padding:10px; background:#fff;}
+.index_prod .item .img{width:164px; height:164px; text-align:center; overflow:hidden; position:relative;}
+.index_prod .item .img .icon_discount{position:absolute; top:0; right:0; width:44px; height:25px; color:#fff; line-height:12px; padding-top:5px;}
+.index_prod .item .img .icon_discount b{font-size:16px;}
+.index_prod .item .img .icon_discount_foot{width:0; height:0; border-left:22px transparent solid; border-right:22px transparent solid; border-top-width:8px; border-top-style:solid; position:absolute; right:0; top:30px;}
+.index_prod .item .img .icon_seckill{padding:0 7px; line-height:20px; overflow:hidden; position:absolute; top:6px; left:6px; color:#fff; display:none;}
+.index_prod .item .price{line-height:26px; font-weight:bold; font-size:14px; text-align:center;}
+.index_prod .item .price del{color:#666; font-size:12px; font-weight:normal;}
+.index_prod .item .name{line-height:160%; height:36px; padding:8px 0 5px; overflow:hidden; text-align:center;}
+.index_prod .item .name a{color:#777;}
+.index_prod .item.first, .index_prod .item:first-child{margin-left:0;}

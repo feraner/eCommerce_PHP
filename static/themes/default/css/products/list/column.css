@@ -1,0 +1,115 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 .prod_list .prod_box{width:220px; margin-bottom:20px; min-height:380px;}
+.w_1200 .prod_list .prod_box .prod_box_pic{height:216px;}
+.w_1200 .prod_list .prod_box .prod_box_pic .thumb_hover{width:220px; height:220px;}
+.w_1200 .prod_list .prod_box .prod_box_button .addtocart{width:128px; background-position:0px -92px;}
+.w_1200 .prod_list .prod_box .prod_box_button .addtocart>a{text-indent:37px;}
+.w_1200 .prod_list .prod_box .prod_box_button .wishlist, .w_1200 .prod_list .prod_box .prod_box_button .compare{width:45px;}
+.w_1200 .prod_list .prod_box .add_cart_box .add_cart_bg{top:183px; width:218px;}
+.w_1200 .prod_list .prod_box .add_cart_box .add_cart{top:183px; width:218px; background-position:50px -140px; text-indent:30px;}
+.w_1200 .prod_list .first, .w_1200 .pro_list .prod_box:first-child{margin-left:0;}
+
+.w_1200 .prod_list .prod_box_2{width:218px; min-height:300px; margin-bottom:30px;}
+.w_1200 .prod_list .prod_box_2 .prod_box_pic{height:218px;}
+
+.w_1200 .prod_list .prod_box_3{width:198px; padding:10px 10px 0; min-height:310px;}
+.w_1200 .prod_list .prod_box_3 .prod_box_pic{height:198px;}
+.w_1200 .prod_list .prod_box_3 .button_group{padding:0 10px 5px;}
+.w_1200 .prod_list .prod_box_3 .button_group .addtocart>a{background-image:none; text-indent:0;}
+
+.w_1200 .prod_list .prod_box_4 .prod_action .addtocart{margin-left:10px;}
+.w_1200 .prod_list .prod_box_4 .prod_action .addtocart>a{width:112px; background-position:0 -98px; text-indent:30px;}
+.w_1200 .prod_list .prod_box_4 .prod_action .addtocart>a:hover{background-position:0 -66px;}
+
+.w_1200 .prod_list .prod_box_5{min-height:330px;}
+.w_1200 .prod_list .prod_box_5 .prod_box_pic{height:206px;}
+.w_1200 .prod_list .prod_box_5 .prod_box_pic.pic_enlarge{height:216px;}
+
+.w_1200 .prod_list .prod_box_6{min-height:330px;}
+.w_1200 .prod_list .prod_box_6 .prod_box_pic{height:220px;}
+/***************************宽屏样式(end)***************************/
+
+.prod_list{padding-top:20px;}
+.pro_main .prod_list{/*width:940px;*/ margin:0 auto;}
+
+.prod_list .prod_box{width:168px; margin-bottom:15px; position:relative; min-height:330px;}
+.prod_list .prod_box .prod_box_pic{height:164px; text-align:center; vertical-align:middle; background:#fff; position:relative; z-index:10; border:2px #fff solid;}
+.prod_list .prod_box .prod_box_pic a{width:100%; height:100%; display:inline-block;}
+.prod_list .prod_box .prod_box_pic img{max-width:100%; max-height:100%;}
+.prod_list .prod_box .prod_box_pic .icon_discount{position:absolute; top:0; right:0; width:44px; height:25px; color:#fff; line-height:12px; padding-top:5px;}
+.prod_list .prod_box .prod_box_pic .icon_discount b{font-size:16px;}
+.prod_list .prod_box .prod_box_pic .icon_discount_foot{width:0; height:0; border-left:22px transparent solid; border-right:22px transparent solid; border-top-width:8px; border-top-style:solid; position:absolute; right:0; top:30px;}
+.prod_list .prod_box .prod_box_pic .icon_seckill{padding:0 7px; line-height:20px; overflow:hidden; position:absolute; top:6px; left:6px; color:#fff; display:none;}
+.prod_list .prod_box .prod_box_pic .thumb_hover{position:absolute; top:0; left:0; opacity:0; filter:alpha(opacity=0); display:block; width:168px; height:168px; background:#fff;}
+.prod_list .prod_box .prod_box_inner{padding:0 7px;}
+.prod_list .prod_box a{color:#666;}
+.prod_list .prod_box .prod_name{overflow:hidden; line-height:145%; padding-top:8px;}
+.prod_list .prod_box .prod_price{line-height:120%; padding:0;}
+.prod_list .prod_box .prod_price del{font-size:12px; color:#666;}
+.prod_list .prod_box .prod_price del .currency_data, .prod_list .prod_box .prod_price del .price_data{color:#666; font-size:12px; font-weight:normal;}
+.prod_list .prod_box .prod_view{padding-top:5px; padding-bottom:8px; height:15px;}
+.prod_list .prod_box .prod_view .favorite{float:right; position:relative;}
+.prod_list .prod_box .prod_box_view{float:left; margin:10px 0 0; width:100%; border-top:1px solid #454545; opacity:0; padding:0; height:46px; background:#000; margin-top:-66px; text-align:center; transition:all 0.3s ease-out; -webkit-transition:all 0.3s ease-out; -moz-transition:all 0.3s ease-out;}
+.prod_list .prod_box .prod_box_button{border-top:1px #454545 solid;}
+.prod_list .prod_box .prod_box_button>div{height:45px; line-height:45px; border-right:1px #454545 solid; text-align:center; background-image:url(../../../images/global/prod_list_ico.png); background-repeat:no-repeat;}
+.prod_list .prod_box .prod_box_button>div>a{width:100%; height:100%; display:inline-block;}
+.prod_list .prod_box .prod_box_button .addtocart{width:56px; border:0; background-position:center -92px; text-align:left;}
+.prod_list .prod_box .prod_box_button .addtocart>a{text-indent:-9999px; text-decoration:none;}
+.prod_list .prod_box .prod_box_button .wishlist{width:55px; background-position:center 0;}
+.prod_list .prod_box .prod_box_button .compare{width:55px; background-position:center -45px;}
+.prod_list .prod_box .add_cart_box{display:none;}
+.prod_list .prod_box .add_cart_box .add_cart_bg{position:absolute; left:0; top:133px; width:168px; height:35px; opacity:0.7; filter:alpha(opacity=70); z-index:10;}
+.prod_list .prod_box .add_cart_box .add_cart{position:absolute; left:0; top:133px; width:168px; height:35px; line-height:35px; color:#fff; z-index:10; text-align:center; background-image:url(../../../images/global/prod_list_ico.png); background-repeat:no-repeat; background-position:24px -140px; text-indent:26px; text-decoration:none;}
+.prod_list .first, .pro_list .prod_box:first-child{margin-left:0;}
+
+
+.prod_list .prod_box.hover_1 .prod_box_pic{border-color:#000;}
+.prod_list .prod_box.hover_1 .prod_box_info{background:#000; color:#fff;}
+.prod_list .prod_box.hover_1 .prod_box_view{opacity:1; filter:alpha(opacity=100); z-index:11; position:relative; margin-top:0; border-top:1px solid #454545;}
+.prod_list .prod_box.hover_1 a, .prod_list .prod_box.hover_1 .prod_price *{color:#fff;}
+
+.prod_list .prod_box_2{width:166px; border:1px #fff solid; min-height:200px; margin-bottom:30px;}
+.prod_list .prod_box_2 .prod_box_pic{height:166px; border:0;}
+.prod_list .prod_box_2.hover_2 .add_cart_box{display:block;}
+.prod_list .prod_box_2.hover_2{border:1px #d8d8d8 solid; box-shadow:3px 3px 4px 0px rgba(0,0,0,0.2);}
+
+.prod_list .prod_box_3{width:154px; padding:6px 6px 0; min-height:265px; border-width:1px 1px medium; border-color:#fff; border-style:solid solid none; border-bottom:0; transition:0.3s ease-in-out; -moz-transition:0.3s ease-in-out; -webkit-transition:0.3s ease-in-out; box-shadow:1px 1px 0 0 #fff inset, 1px 1px 0 0 #fff; position:relative; border-radius:8px 8px 0 0;}
+.prod_list .prod_box_3 .prod_box_pic{height:154px;}
+.prod_list .prod_box_3 .button_group{position:absolute; top:100%; left:-1px; right:-1px; padding:0 6px 5px; opacity:0; border-width:medium 1px 1px; border-color:#fff; border-style:none solid solid; border-top:0; transition:0.3s ease-in-out; -moz-transition:0.3s ease-in-out; -webkit-transition:0.3s ease-in-out; box-shadow:1px 0 0 0 #fff inset, 1px 1px 0 0 #fff; border-radius:0 0 8px 8px; z-index:11;}
+.prod_list .prod_box_3 .button_group>div{overflow:hidden;}
+.prod_list .prod_box_3 .button_group .addtocart>a{border-radius:10px; padding:7px 13px; line-height:20px; display:inline-block; text-transform:uppercase; color:#fff; text-decoration:none; background-image:url(../../../images/global/prod_list_ico.png); background-repeat:no-repeat; background-position:center -140px; text-indent:-9999px;}
+.prod_list .prod_box_3 .button_group .wishlist>a{width:35px; height:35px; border:1px #bbb solid; border-radius:8px; margin-left:10px; display:inline-block; background-image:url(../../../images/global/wishlist_bg.png); background-repeat:no-repeat; background-position:0 0; transition:background-color 0.5s ease; -webkit-transition:background-color 0.5s ease;}
+.prod_list .prod_box_3 .button_group .wishlist>a:hover{background-position:0 -34px; background-color:#b22500; border:1px #c22500 solid;}
+.prod_list .prod_box_3.hover_3{border-color:#989898; background:#e9e9e9;}
+.prod_list .prod_box_3.hover_3 .button_group{border-color:#989898; background:#e9e9e9; opacity:1;}
+
+.prod_list .prod_box_4 .prod_box_pic .icon_eyes{position:absolute; top:50%; left:50%; width:80px; height:80px; margin-left:-40px; margin-top:-40px; opacity:0; animation:fadeOut .4s; -webkit-animation:fadeOut .4s; background:url(../../../images/global/eyes.png) no-repeat;}
+.prod_list .prod_box_4 .prod_box_pic:hover .icon_eyes{opacity:0.6; animation:bounceIn .4s; -webkit-animation:bounceIn .4s;}
+.prod_list .prod_box_4 .prod_action{height:44px; margin-top:5px;}
+.prod_list .prod_box_4 .prod_action>div{overflow:hidden; opacity:0; transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;}
+.prod_list .prod_box_4 .prod_action>div>a{width:35px; height:35px; line-height:35px; display:inline-block; border:3px #e9e9e9 solid; background-image:url(../../../images/global/prod_action.png); background-repeat:no-repeat;}
+.prod_list .prod_box_4 .prod_action>div>a:hover{border-color:#232323; background-color:#232323; color:#fff;}
+.prod_list .prod_box_4 .prod_action .addtocart{margin-left:22px; opacity:1;}
+.prod_list .prod_box_4 .prod_action .addtocart>a{background-position:center -98px; text-indent:-9999px; text-decoration:none;}
+.prod_list .prod_box_4 .prod_action .addtocart>a:hover{background-position:center -66px;}
+.prod_list .prod_box_4 .prod_action .wishlist>a{background-position:center -32px;}
+.prod_list .prod_box_4 .prod_action .wishlist>a:hover{background-position:center 0;}
+.prod_list .prod_box_4 .prod_action .compare>a{background-position:center -164px;}
+.prod_list .prod_box_4 .prod_action .compare>a:hover{background-position:center -131px;}
+.prod_list .prod_box_4.hover_4 .prod_action>div{opacity:1;}
+
+.prod_list .prod_box_5{min-height:280px;}
+.prod_list .prod_box_5 .prod_box_pic{height:158px; padding:5px; border:0;}
+.prod_list .prod_box_5 .prod_box_pic.pic_enlarge{height:168px; padding:0;}
+
+.prod_list .prod_box_6{min-height:280px;}
+.prod_list .prod_box_6 .prod_box_pic{height:168px; border:0;}
+
+#wrapper{position:relative; width:auto; min-width:939px;}
+#ColumnContainer{position:relative; min-height:500px; margin:0 auto;}
+#ColumnContainer .pin{position:absolute; left:-600px; top:1000px;}

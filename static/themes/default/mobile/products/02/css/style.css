@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.pro_list{margin:.625rem .625rem 0;}
+.pro_list .item{height:8rem; overflow:hidden; margin-bottom:.625rem; padding-bottom:.75rem;}
+.pro_list .item .img{width:5rem; height:5rem; margin-left:.625rem; margin-top:1rem; text-align:center; background:url(../../../images/loading.gif) no-repeat center; background-size:20.1%; position:relative;}
+.pro_list .item .img img{max-height:100%; vertical-align:middle;}
+.pro_list .item .img .icon_discount{width:38px; height:25px; color:#fff; line-height:12px; padding-top:5px; position:absolute; top:0; right:0;}
+.pro_list .item .img .icon_discount b{font-size:16px;}
+.pro_list .item .img .icon_discount_foot{width:0; height:0; border-left:19px transparent solid; border-right:19px transparent solid; border-top-width:5px; border-top-style:solid; position:absolute; right:0; top:30px;}
+.pro_list .item .desc{margin-left:6.5rem;}
+.pro_list .item .desc .name{line-height:1rem; padding:.625rem; padding-left:0;}
+.pro_list .item .desc .name a{font-size:.75rem; color:#333;}
+.pro_list .item .desc .price{line-height:1.5rem; margin-top:.75rem; font-size:1rem; color:#d60707;}
+.pro_list .item .desc .price del{ color:#888; margin-left:0.5rem;}

@@ -1,0 +1,112 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.w_1400 #mta .nav>div, #mta .nav>dl, #mta .nav ul{margin-right:60px;}
+.w_1400 #mta .nav dl dd a{margin:0 5px;}
+.w_1400 #mta .nav ul li .form_input{width:170px;}
+
+#mta>h3{font-size:14px; line-height:30px; padding:0 10px; font-weight:lighter; text-indent:10px;}
+#mta .box{background:#fff; margin:10px; overflow:hidden;}
+#mta .box.notop{margin-top:0;}
+
+#mta .nav{height:50px; padding:0 10px; margin-top:0;}
+#mta .nav>div, #mta .nav>dl, #mta .nav ul{float:left; margin-right:30px;}
+#mta .nav ul.clean{margin-right:0;}
+#mta .nav dl dt{font-weight:bold; float:left; line-height:50px;}
+#mta .nav dl dt a.clean{font-weight:lighter;}
+#mta .nav dl dd{float:left; line-height:50px;}
+#mta .nav dl dd a{display:block; margin:0; padding:0 5px; height:48px; line-height:48px;}
+#mta .nav dl dd a:hover,#mta .nav dl dd a.cur{text-decoration:none; border-bottom:2px solid #49907e;}
+#mta .nav ul{margin-top:10px;}
+#mta .nav ul li{float:left; height:30px; line-height:30px; padding:0 3px; font-weight:bold;}
+#mta .nav ul li .form_input{height:28px; line-height:28px; border-radius:5px; width:120px;}
+#mta .nav ul li .btn_ok{min-width:60px;}
+#mta .nav ul li.compared_input{display:none;}
+#mta .nav ul li.compared{border:1px solid #53a08c; width:20px; height:20px; display:block; margin-top:4px; padding:0;}
+#mta .nav ul li.compared.checked{background:url(../images/mta/compared.png) center center no-repeat;}
+
+#mta .data_list{border:1px solid #e7e7e7; height:130px;}
+#mta .data_list>li{float:left; width:25%; height:130px; margin-left:-1px; border-left:1px solid #e7e7e7;}
+#mta .data_list>li:nth-child(2),#mta .data_list>li:nth-child(4){background:#fafafa;}
+#mta .data_list>li>div{padding:15px;}
+#mta .data_list>li>div h1{font-size:20px;}
+#mta .data_list>li>div h2{font-size:36px; padding:8px 0 5px; color:#53a18e;}
+#mta .data_list>li>div h3{color:#888;}
+#mta .data_list>li>div h2 .compare, #mta .data_list>li>div h3.compare{font-size:20px; color:#888;}
+#mta .data_list>li>div h2 .compare.vs, #mta .data_list>li>div h3 .compare.vs{/*margin:0 15px;*/ font-size:16px; margin-right:15px;}
+#mta .data_list>li .fr{width:33px; height:16px; margin-top:15px;}
+#mta .data_list>li .fr.down{background:url(../images/mta/compared_down.png) center center no-repeat;}
+#mta .data_list>li .fr.up{background:url(../images/mta/compared_up.png) center center no-repeat;}
+
+#mta .data_list>li>div dt{float:left; width:72px; display:block; text-align:right;}
+#mta .data_list>li>div dd{float:left; display:inline-block;}
+#mta .data_list>li>div dt .compare, #mta .data_list>li>div dd .compare{color:#888;}
+#mta .order_data_list, #mta .order_data_list li{height:240px;}
+#mta .order_data_list li>div h2{padding:8px 0;}
+#mta .detail>h1{font-size:20px; line-height:50px; padding:0 10px;}
+
+
+#mta .compare{display:none;}
+#mta .charts{padding:15px; min-height:250px;}
+#mta .r_con_table thead{background:#e7f7f4;}
+#mta .data_table tbody td, #mta .data_table tbody td *{color:#489180; font-size:14px;}
+#mta .data_table tbody td .compare{color:#888; font-size:12px; padding-top:3px;}
+
+#mta_detail_data{position:relative; width:100%; z-index:10000; display:none;} 
+#mta_detail_data .back{position:absolute; top:-60px; left:10px; z-index:10001; height:50px; background:#fff;}
+#mta_detail_data .back a{margin:10px;}
+#mta_detail_data .detail table{display:none;}
+
+#mta .visits_conversion{min-height:420px; height:auto;}
+#mta .visits_conversion>li{width:20%; min-height:420px; height:auto;}
+#mta .visits_conversion>li>div .title{padding:0 12px 15px;}
+#mta .visits_conversion>li>div .contents li{padding:20px 12px; border-top:1px solid #ccc; display:block;}
+#mta .visits_conversion>li>div .contents li .contents_left{width:56%; float:left; min-height:55px;}
+#mta .visits_conversion>li>div .contents li .contents_left .operate{font-size:18px; height:30px; line-height:30px; overflow:hidden;}
+#mta .visits_conversion>li>div .contents li .contents_left .operate_data{color:#53a18e; height:25px; line-height:25px; overflow:hidden;}
+#mta .visits_conversion>li>div .contents li .contents_left .operate_data.compare{color:#888; padding-top:2px;}
+#mta .visits_conversion>li>div .contents li .contents_right{width:43%; float:right; min-height:55px; text-align:right;}
+#mta .visits_conversion>li>div .contents li .contents_right .operate_ratio{height:50px; line-height:50px; font-size:28px; overflow:hidden;}
+#mta .visits_conversion>li>div .contents li .contents_right .operate_ratio.compare{height:25px; line-height:25px; padding-top:5px; font-size:18px; color:#888; padding-right:8px;}
+
+#mta #sales-list>li:hover{background:#e7f7f4;}
+#mta .sale_detail li.title{line-height:30px; background:#e7f7f4; font-weight:bold; color:#60666a; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8;}
+#mta .sale_detail li{border-bottom:1px solid #e8e8e8; padding:8px 0;}
+#mta .sale_detail li>div{overflow:hidden; float:left; padding:2px 8px; box-sizing:border-box;}
+#mta .sale_detail li>div.clear{float:none; padding:0;}
+#mta .sale_detail li>div p{padding:3px 0; line-height:20px;}
+#mta .sale_detail li a{color:green;}
+#mta .sale_detail li .number{width:8%;}
+#mta .sale_detail li .products{width:37%; position:relative;}
+#mta .sale_detail li .country{width:20%;}
+#mta .sale_detail li .products .img{position:absolute; width:90px; height:90px; top:2px; overflow:hidden; border:1px solid #f0f0f0; text-align:center;}
+#mta .sale_detail li .products .img img{max-width:100%; max-height:100%;}
+#mta .sale_detail li .products .info{padding-left:105px; padding-right:15px;}
+
+#mta .sale_detail li .related{width:28%; position:relative;}
+#mta .sale_detail li .related .info{padding-right:15px;}
+#mta .sale_detail li .operate{width:7%; text-align:center;}
+#mta .sale_detail li .operate a{display:inline-block; width:20px; height:20px; background:url(../../ico/search_big.png) no-repeat; margin:0 auto;}
+#mta .sale_detail li .detail_list{display:none; float:none; border-top:2px solid #ccc; border-bottom:2px solid #ccc; padding:12px 15px; background:#fff;}
+#mta .sale_detail li .detail_list .related_box{width:48%; overflow:hidden;}
+#mta .sale_detail li .detail_list .related_box li.title{padding:2px 8px;}
+#mta .sale_detail li .detail_list .related_box .no{width:5%; float:left; overflow:hidden;}
+#mta .sale_detail li .detail_list .related_box .data{width:95%; float:left; overflow:hidden;}
+#mta .sale_detail li .detail_list .related_box .data span{display:inline-block; padding-right:20px;}
+
+
+
+#mta .user_detail{background:none !important;}
+#mta .user_detail li{display:block; height:180px; overflow:hidden; padding:10px; box-sizing:border-box; background:#fff; position:relative;}
+#mta .user_detail li.single{width:100%;}
+#mta .user_detail li.double{width:49.7%;}
+#mta .user_detail li .rate{width:130px; height:130px; position:absolute; left:15px; top:25px;}
+#mta .user_detail li .data{width:100%; box-sizing:border-box; padding:10px 0 10px 160px;}
+#mta .user_detail li .data dt{font-size:18px;}
+#mta .user_detail li .data dd{padding-top:8px;}
+#mta .user_detail li .data dd>div{height:24px; line-height:24px; overflow:hidden; padding-right:20px; box-sizing:border-box; float:left;}
+#mta .user_detail li.single .data dd>div{width:33.3%;}
+#mta .user_detail li.double .data dd>div{width:50%;}
+#mta .user_detail li .data dd>div font{color:#999; margin-left:5px;}

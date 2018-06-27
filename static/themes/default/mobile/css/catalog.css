@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.category_list{}
+.category_list .item{}
+.category_list .item .cate_1{border-bottom:1px solid #e0e0e0; height:1.02rem; position:relative;}
+.category_list .item .cate_1 .img{width:13.4375%; height:1.02rem; margin-left:4.375%;}
+.category_list .item .cate_1 .img img{vertical-align:middle; max-height:100%;}
+.category_list .item .cate_1 .name{line-height:1.02rem; color:#333; font-size:0.3rem; width:68.75%; padding-right:9.0625%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height:1.02rem;}
+.category_list .item .cate_1 .name a{color:#333; font-size:0.3rem;}
+.category_list .item .cate_1.lower:after{position:absolute; width:2.96875%; height:0.11rem; background:url(../images/category_lower.jpg) no-repeat 0 0; background-size:100%; content:''; left:92.03125%; top:50%; margin-top:-0.06rem; -webkit-transition:-webkit-transform .3s linear 0s; transition:transform .3s linear 0s;}
+.category_list .item .cate_2{background:#eee; display:none;}
+.category_list .item .cate_2 .i{-webkit-box-sizing:border-box; box-sizing:border-box; display:block; padding-left:6.09375%; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height:0.88rem; line-height:0.88rem; font-size:0.28rem; color:#333; border-bottom:1px solid #e0e0e0;}
+.category_list .item .cate_2 .i a{}
+.category_list .item.on .cate_1.lower:after{-webkit-transform:rotate(180deg); transform:rotate(180deg);}
+.category_list .item.on .cate_2{display:block;}

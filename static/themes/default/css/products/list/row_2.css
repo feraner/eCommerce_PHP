@@ -1,0 +1,38 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 .prod_list .flat_pro_item{width:458px;}
+.w_1200 .pro_main .prod_list .flat_pro_item{width:588px;}
+/***************************宽屏样式(end)***************************/
+
+.prod_list{padding-top:20px;}
+.prod_list .pro_item{border:1px #eee solid; margin-left:20px; margin-bottom:20px; background:#fafafa;}
+.prod_list .pro_item:hover{border:1px #ccc solid;}
+.prod_list .pro_item>dt{text-align:center; vertical-align:middle; background:#fff; position:relative;}
+.prod_list .pro_item>dt img{max-width:100%; max-height:100%;}
+.prod_list .pro_item>dt .icon_discount{position:absolute; top:0; right:0; width:44px; height:25px; color:#fff; line-height:12px; padding-top:5px;}
+.prod_list .pro_item>dt .icon_discount b{font-size:16px;}
+.prod_list .pro_item>dt .icon_discount_foot{width:0; height:0; border-left:22px transparent solid; border-right:22px transparent solid; border-top-width:8px; border-top-style:solid; position:absolute; right:0; top:30px;}
+.prod_list .pro_item>dt .icon_seckill{padding:0 7px; line-height:20px; overflow:hidden; position:absolute; top:6px; left:6px; color:#fff; display:none;}
+.prod_list .pro_item>dd{padding:0 7px;}
+.prod_list .pro_item .pro_name{height:36px; overflow:hidden; line-height:140%; padding-top:8px;}
+.prod_list .pro_item a{color:#666;}
+.prod_list .pro_item .pro_price{line-height:120%;}
+.prod_list .pro_item del{font-size:12px; color:#666;}
+.prod_list .pro_item del .currency_data, .prod_list .pro_item del .price_data{color:#666; font-size:12px; font-weight:normal;}
+.prod_list .pro_item .pro_view{padding:8px 0; height:15px;}
+.prod_list .pro_item .favorite{float:right; position:relative;}
+.prod_list .flat_pro_item{width:348px; margin-bottom:15px; height:auto; padding-top:10px; padding-bottom:10px;}
+.prod_list .flat_pro_item dt{width:130px; height:130px; margin-left:13px;}
+.prod_list .flat_pro_item .desc_box{padding-left:159px; margin-right:10px;}
+.prod_list .flat_pro_item .pro_name{line-height:18px; height:35px; margin:3px 0; padding-top:0; overflow:hidden;}
+.prod_list .flat_pro_item .pro_name a{font-weight:bold; font-size:13px;}
+.prod_list .flat_pro_item .pro_price{margin:3px 0 6px; font-size:16px;}
+.prod_list .flat_pro_item .pro_item_add{font-size:14px; padding:0 15px;}
+.prod_list .first, #pro_list .pro_item:first-child{margin-left:0;}
+
+.pro_main .prod_list{/*width:940px;*/ margin:0 auto;}
+.pro_main .prod_list .flat_pro_item{width:478px;}

@@ -1,0 +1,25 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+#web_template{width:100%; margin:0 auto; overflow:hidden; background:#fff;}
+#web_template .template_box{position:relative; overflow:hidden;}
+#web_template .img{height:100%; overflow:hidden;}
+#web_template .img img{width:100%; height:100%;}
+#web_template .text a{display:block; width:100%; text-decoration:none; color:#333; text-align:center; font-weight:bold;}
+#web_template .mod{width:100%; height:100%; overflow:hidden; position:absolute; left:0; top:0; text-align:center; background:#999; cursor:pointer; z-index:1000; display:none; opacity:0.5; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5;}
+#web_template .current_box{width:100%; height:50px; position:absolute; left:0; top:0; border:5px #54a28f solid; background:#999; cursor:pointer; z-index:10; opacity:0.5; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5;}
+#web_template .t1{height:100px;}
+#web_template .t1 .current_box{width:221px; height:90px;}
+#web_template .t2{height:110px;}
+#web_template .t2 .current_box{width:221px; height:100px;}
+#web_template .t3{height:40px;}
+#web_template .t3 .current_box{width:221px; height:30px;}
+#web_template .t4{height:30px;}
+#web_template .t4 .current_box{width:221px; height:20px;}
+#web_template .t5{height:120px;}
+#web_template .t5 .current_box{width:221px; height:110px;}
+
+#web_template .t3 .text a{height:40px; line-height:40px;}
+#web_template .t4 .text a{height:30px; line-height:30px;}
+#web_template .t5 .text a{height:120px; line-height:120px;}

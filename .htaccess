@@ -1,0 +1,130 @@
+error_page 404 													/index.php?m=404;
+rewrite ^/(index.html)?$ 										/index.php?m=index last;
+rewrite ^/404.html$ 											/index.php?m=404 last;
+rewrite ^/webhooks$ 											/verify.php last;
+
+
+############################################ pc ############################################
+rewrite ^/\S*_a([0-9]+).html$ 									/index.php?m=article&AId=$1 last;
+rewrite ^/art/$ 												/index.php?a=article last;
+rewrite ^/art/(\S+)$ 											/index.php?m=article&PageUrl=$1 last;
+rewrite ^/info/$ 												/index.php?m=info last;
+rewrite ^/info/([0-9]+).html$ 									/index.php?m=info&page=$1 last;
+rewrite ^/info/\S*_c([0-9]+)$ 									/index.php?m=info&CateId=$1 last;
+rewrite ^/info/\S*_c([0-9]+)/([0-9]+).html$ 					/index.php?m=info&CateId=$1&page=$2 last;
+rewrite ^/\S*_i([0-9]+).html$ 									/index.php?m=info&InfoId=$1 last;
+rewrite ^/\S*_h([0-9]+).html$ 									/index.php?m=help&AId=$1 last;
+rewrite ^/help/$ 												/index.php?m=help last;
+rewrite ^/help/(\S+)$ 											/index.php?m=help&PageUrl=$1 last;
+
+rewrite ^/blog/$ 												/index.php?m=blog last;
+rewrite ^/blog/c/\S*-([0-9]+)$ 									/index.php?m=blog&CateId=$1 last;
+rewrite ^/blog/t/([0-9]+)$ 									/index.php?m=blog&date=$1 last;
+rewrite ^/blog/\S*-b([0-9]+).html$ 								/index.php?m=blog&a=detail&AId=$1 last;
+rewrite ^/holiday.html$ 										/index.php?m=holiday last;
+rewrite ^/FlashSale.html$ 										/index.php?m=seckill last;
+rewrite ^/GroupBuying.html$ 									/index.php?m=tuan last;
+rewrite ^/sitemap.html$ 										/index.php?m=sitemap last;
+
+rewrite ^/ajax/(\S+).html$ 										/index.php?m=ajax&a=$1 last;
+
+############################################# products ######################################################################
+rewrite ^/New-Arrival/$ 										/index.php?m=products&a=products&Ext=1 last;
+rewrite ^/New-Arrival/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=1&page=$1 last;
+rewrite ^/new-arrival/$ 										/index.php?m=products&a=products&Ext=1 last;
+rewrite ^/new-arrival/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=1&page=$1 last;
+rewrite ^/New-Arrivals/$ 										/index.php?m=products&a=products&Ext=1 last;
+rewrite ^/New-Arrivals/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=1&page=$1 last;
+rewrite ^/new-arrivals/$ 										/index.php?m=products&a=products&Ext=1 last;
+rewrite ^/new-arrivals/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=1&page=$1 last;
+rewrite ^/Hot-Sales/$ 											/index.php?m=products&a=products&Ext=2 last;
+rewrite ^/Hot-Sales/([0-9]+).html$ 								/index.php?m=products&a=products&Ext=2&page=$1 last;
+rewrite ^/hot-sales/$ 											/index.php?m=products&a=products&Ext=2 last;
+rewrite ^/hot-sales/([0-9]+).html$ 								/index.php?m=products&a=products&Ext=2&page=$1 last;
+rewrite ^/Best-Deals/$ 											/index.php?m=products&a=products&Ext=3 last;
+rewrite ^/Best-Deals/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=3&page=$1 last;
+rewrite ^/best-deals/$ 											/index.php?m=products&a=products&Ext=3 last;
+rewrite ^/best-deals/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=3&page=$1 last;
+rewrite ^/Special-Offer/$ 										/index.php?m=products&a=products&Ext=4 last;
+rewrite ^/Special-Offer/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=4&page=$1 last;
+rewrite ^/special-offer/$ 										/index.php?m=products&a=products&Ext=4 last;
+rewrite ^/special-offer/([0-9]+).html$ 							/index.php?m=products&a=products&Ext=4&page=$1 last;
+rewrite ^/search/$ 												/index.php?m=products&a=products last;
+rewrite ^/search/([0-9]+).html$ 								/index.php?m=products&a=products&page=$1 last;
+rewrite ^/products/$ 											/index.php?m=products&a=products last;
+rewrite ^/products/([0-9]+).html$ 								/index.php?m=products&a=products&page=$1 last;
+rewrite ^/products/(\S+).html$ 									/index.php?m=products&a=$1 last;
+rewrite ^/c/\S*_([0-9]+)$ 										/index.php?m=products&a=products&CateId=$1 last;
+rewrite ^/c/\S*_([0-9]+)/([0-9]+).html$ 						/index.php?m=products&a=products&CateId=$1&page=$2 last;
+rewrite ^/\S*_p([0-9]+).html$ 									/index.php?m=products&a=goods&ProId=$1 last;
+rewrite ^/\S*_p([0-9]+)_k([0-9]+).html$ 						/index.php?m=products&a=goods&ProId=$1&SId=$2 last;
+rewrite ^/\S*_p([0-9]+)_s([0-9]+).html$ 						/index.php?m=products&a=goods&ProId=$1&SId=$2 last;
+rewrite ^/\S*_p([0-9]+)_g([0-9]+).html$ 						/index.php?m=products&a=goods&ProId=$1&TId=$2 last;
+rewrite ^/\S*_p([0-9]+)_t([0-9]+).html$ 						/index.php?m=products&a=goods&ProId=$1&TId=$2 last;
+rewrite ^/custom-products/([0-9]+).html$ 						/index.php?m=products&a=custom&ProId=$1&quickView=1 last;
+rewrite ^/review/([0-9]+).html$ 								/index.php?m=products&a=review&ProId=$1 last;
+rewrite ^/review_p([0-9]+)/$ 									/index.php?m=products&a=review&ProId=$1 last;
+rewrite ^/review_p([0-9]+)/([0-9]+).html$ 						/index.php?m=products&a=review&ProId=$1&page=$2 last;
+rewrite ^/review-write/([0-9]+).html$ 							/index.php?m=products&a=write_review&ProId=$1 last;
+
+############################################# cart ######################################################################
+rewrite ^/cart/$ 												/index.php?m=cart last;
+rewrite ^/cart/address/$ 										/index.php?m=cart&a=address last;
+rewrite ^/cart/address/add.html$ 								/index.php?m=cart&a=address&d=add last;
+rewrite ^/cart/checkout.html$ 									/index.php?m=cart&a=checkout last;
+rewrite ^/cart/buynow.html$ 									/index.php?m=cart&a=buynow last;
+rewrite ^/cart/quick.html$ 										/index.php?m=cart&a=quick last;
+rewrite ^/cart/complete/([0-9]+).html$ 							/index.php?m=cart&a=complete&OId=$1 last;
+rewrite ^/cart/payment/([0-9]+).html$ 							/index.php?m=cart&a=payment&OId=$1 last;
+rewrite ^/cart/success/([0-9]+).html$ 							/index.php?m=cart&a=success&OId=$1 last;
+rewrite ^/cart/excheckout/SetExpressCheckout.html$ 				/index.php?m=cart&a=excheckout&d=SetExpressCheckout last;
+rewrite ^/cart/excheckout/ReviewOrder.html$ 					/index.php?m=cart&a=excheckout&d=ReviewOrder last;
+rewrite ^/cart/excheckout/checkout.html$ 						/index.php?m=cart&a=excheckout&d=checkout last;
+rewrite ^/cart/excheckout/APIError.html$ 						/index.php?m=cart&a=excheckout&d=APIError last;
+rewrite ^/payment/([0-9a-zA-Z_]+)/([0-9a-zA-Z_]+)/$ 			/index.php?m=gateway&a=$1&d=$2 last;
+rewrite ^/payment/([0-9a-zA-Z_]+)/([0-9a-zA-Z_]+)/([0-9]+).html$ /index.php?m=gateway&a=$1&d=$2&OId=$3 last;
+rewrite ^/cart/remove_c([0-9]+).html$ 							/index.php?do_action=cart.remove&CId=$1 last;
+
+############################################# member ######################################################################
+rewrite ^/account/oauth/([0-9a-zA-Z]+)/$ 						/index.php?do_action=user.user_oauth&Type=$1 last;
+rewrite ^/account/login.html$ 									/index.php?m=user&a=login last;
+rewrite ^/account/sign-up.html$ 								/index.php?m=user&a=register last;
+rewrite ^/account/forgot.html$ 									/index.php?m=user&a=forgot last;
+rewrite ^/account/binding.html$ 								/index.php?m=user&a=binding last;
+rewrite ^/account/favorite/$ 									/index.php?m=user&a=favorite last;
+rewrite ^/account/favorite/([0-9]+).html$ 						/index.php?m=user&a=favorite&page=$1 last;
+rewrite ^/account/orders/$ 										/index.php?m=user&a=order last;
+rewrite ^/account/orders/([0-9]+).html$ 						/index.php?m=user&a=order&page=$1 last;
+rewrite ^/account/orders/view([0-9]+).html$ 					/index.php?m=user&a=order&d=view&OId=$1 last;
+rewrite ^/account/orders/contact([0-9]+).html$ 					/index.php?m=user&a=order&d=contact&OId=$1 last;
+rewrite ^/account/orders/cancel([0-9]+).html$ 					/index.php?m=user&a=order&d=cancel&OId=$1 last;
+rewrite ^/account/print/([0-9]+).html$ 							/index.php?m=user&a=print&OId=$1 last;
+rewrite ^/account/review/$ 										/index.php?m=user&a=review last;
+rewrite ^/account/review/([0-9]+).html$ 						/index.php?m=user&a=review&page=$1 last;
+rewrite ^/account/coupon/$ 										/index.php?m=user&a=coupon last;
+rewrite ^/account/coupon/([0-9]+).html$ 						/index.php?m=user&a=coupon&page=$1 last;
+rewrite ^/account/address/$ 									/index.php?m=user&a=address last;
+rewrite ^/account/address/add.html$ 							/index.php?m=user&a=address&d=add last;
+rewrite ^/account/setting/$ 									/index.php?m=user&a=setting last;
+rewrite ^/account/password/$ 									/index.php?m=user&a=password last;
+rewrite ^/account/inbox/$ 										/index.php?m=user&a=inbox&d=inbox last;
+rewrite ^/account/inbox/view([0-9]+).html$ 						/index.php?m=user&a=inbox&d=inbox&MId=$1 last;
+rewrite ^/account/outbox/$ 										/index.php?m=user&a=inbox&d=outbox last;
+rewrite ^/account/outbox/view([0-9]+).html$ 					/index.php?m=user&a=inbox&d=outbox&MId=$1 last;
+rewrite ^/account/write/$ 										/index.php?m=user&a=inbox&d=write last;
+rewrite ^/account/message/$ 									/index.php?m=user&a=message last;
+rewrite ^/account/message/([0-9]+).html$ 						/index.php?m=user&a=message&page=$1 last;
+rewrite ^/account/message/view([0-9]+).html$ 					/index.php?m=user&a=message&MId=$1 last;
+rewrite ^/account/products/$ 									/index.php?m=user&a=products last;
+rewrite ^/account/products/([0-9]+).html$ 						/index.php?m=user&a=products&page=$1 last;
+rewrite ^/account/products/view([0-9]+).html$ 					/index.php?m=user&a=products&MId=$1 last;
+rewrite ^/account/logout.html$ 									/index.php?do_action=user.logout last;
+rewrite ^/account/like_p([0-9]+)r([0-9]+)l([0-9\-]+).html$ 		/index.php?do_action=user.like_review&ProId=$1&RId=$2&Like=$3 last;
+rewrite ^/account/favorite/add([0-9]+).html$ 					/index.php?do_action=user.add_favorite&ProId=$1 last;
+rewrite ^/account/favorite/remove([0-9]+).html$ 				/index.php?do_action=user.del_favorite&ProId=$1 last;
+rewrite ^/account/address/remove([0-9]+).html$ 					/index.php?do_action=user.addressbook_del&AId=$1 last;
+
+############################################# mobile ######################################################################
+rewrite "^/([a-z]*/{0,1})account/$"								/index.php?m=user&l=$1 last;
+rewrite ^/catalog/?$ 											/index.php?m=products&a=catalog last;
+rewrite ^/catalog/c_([0-9]+)/?$ 								/index.php?m=products&a=catalog&CateId=$1 last;

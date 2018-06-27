@@ -1,0 +1,48 @@
+<?php
+include('../../../../../inc/global.php');
+
+//设置语言版
+$config_row=db::get_all('config', "GroupId='global' and (Variable='Language' || Variable='LanguageDefault')");
+foreach($config_row as $v){
+	if("{$v['GroupId']}|{$v['Variable']}"=='global|Language'){
+		$c['config'][$v['GroupId']][$v['Variable']]=explode(',', $v['Value']);
+	}else{
+		$c['config'][$v['GroupId']][$v['Variable']]=$v['Value'];
+	}
+}
+$host_ary=@explode('.', $_SERVER['HTTP_HOST']);
+$c['lang_oth']=str_replace('-', '_', array_shift($host_ary));
+$c['lang']='_'.(@in_array($c['lang_oth'], $c['config']['global']['Language'])?$c['lang_oth']:$c['config']['global']['LanguageDefault']);
+
+$ProId=(int)$_GET['ProId'];
+$ColorId=(int)$_GET['ColorId'];
+$row=str::str_code(db::get_one('products_color', "ProId='$ProId' and VId='$ColorId' and VId>0 and PicPath_0!=''"));
+$pro_row=str::str_code(db::get_one('products', "ProId='$ProId'"));
+if(!$row || !is_file($c['root_path'].$row['PicPath_0'])) $row=$pro_row;
+?>
+<div class="detail_pic">
+	<div class="up pic_shell">
+		<div class="big_box">
+			<div class="magnify" data="{}">
+				<a class="big_pic" href="<?=$row['PicPath_0'];?>"><img itemprop="image" class="normal" src="<?=ly200::get_size_img($row['PicPath_0'], '500x500');?>" alt="<?=$pro_row['Name'.$c['lang']];?>" /></a>
+			</div>
+		</div>
+	</div>
+	<div class="down">
+		<div class="small_carousel">
+			<div class="viewport" data="<?=htmlspecialchars('{"small":"240x240","normal":"500x500","large":"v"}');?>">
+				<ul class="list" style="width:640px;">
+					<?php
+					for($i=0; $i<10; $i++){
+						$pic=$row['PicPath_'.$i];
+						if(!is_file($c['root_path'].$pic)) continue;
+					?>
+					<li class="item FontBgColor<?=$i==0?' current':'';?>" pos="<?=$i+1;?>"><a href="javascript:;" class="pic_box FontBorderHoverColor" alt="" title="" hidefocus="true"><img src="<?=ly200::get_size_img($pic, '240x240');?>" title="<?=$pro_row['Name'.$c['lang']];?>" alt="<?=$pro_row['Name'.$c['lang']];?>" normal="<?=ly200::get_size_img($pic, '500x500');?>" mask="<?=$pic;?>" onerror="$.imgOnError(this)"><span></span></a><em class="arrow FontPicArrowColor"></em></li>
+					<?php }?>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" hidefocus="true" class="btn left prev"><span class="icon_left_arraw icon_arraw"></span></a>
+			<a href="javascript:void(0);" hidefocus="true" class="btn right next"><span class="icon_right_arraw icon_arraw"></span></a>
+		</div>
+	</div>
+</div>

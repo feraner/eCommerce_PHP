@@ -1,0 +1,31 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+#top_outer{background:#f6f6f6; border-bottom:1px solid #e8e8e8;}
+#top_outer .wide{height:34px; line-height:35px;}
+#top_outer .home{width:34px; height:34px; overflow:hidden; background:url(../images/global/normal.png) -834px -62px no-repeat; overflow:hidden; display:inline-block; text-indent:50px;}
+#top_outer .crossn{margin-right:5px;}
+#top_outer .crossn li{display:inline-block; padding:0 12px; height:34px; background:url(../images/ico-img.png) -199px -72px no-repeat; position:relative; z-index:1010;}
+#top_outer .crossn li:first-child{background:url(../images/ico-img.png) -166px -36px no-repeat; padding-left:36px;}
+#top_outer .crossn li.block{padding:0 4px;}
+#top_outer .crossn li:first-child.block{padding:0 4px 0 30px;}
+#top_outer .crossn li div strong{ margin-left:6px;}
+#top_outer .crossn li:hover dt{background-color:#fff; border:1px solid #d1d1d1; border-bottom:none; z-index:1011; position:relative; -webkit-border-radius-topleft:6px; -moz-border-radius-topleft:6px; border-top-left-radius:6px; -webkit-border-radius-topright:6px; -moz-border-radius-topright:6px; border-top-right-radius:6px;}
+#top_outer .crossn li:hover dt.not_dd{background:none; border:1px transparent solid;}
+#top_outer .crossn li dt{height:28px; line-height:28px; margin-top:3px; border:1px solid #f6f6f6; padding:0 20px 0 10px; cursor:pointer; background:url(../images/ico-img.png) right -114px no-repeat;}
+#top_outer .crossn li dt strong{width:40px; display:block; text-align:center;}
+#top_outer .crossn li dt b{display:inline-block; width:15px; height:15px; margin-left:5px; margin-bottom:-3px; overflow:hidden; background:url(../images/user/mail_icon.png) no-repeat;}
+#top_outer .crossn li dt.not_dd{background:none; padding-right:10px;}
+#top_outer .crossn li dd{padding:5px 10px 8px; border:1px solid #d1d1d1; background:#fff; position:absolute; top:31px; right:4px; display:none;}
+#top_outer .crossn li dd img{margin-right:5px;}
+#top_outer .crossn li dd .inbox_tips{display:inline-block; height:15px; line-height:15px; margin-left:5px; margin-bottom:-3px; padding:0 4px; overflow:hidden; color:#fff; text-align:center; background-color:#c00; border-radius:5px;}
+#top_outer .crossn li:hover dd{display:block; z-index:1010; -webkit-border-radius-bottomleft:6px; -moz-border-radius-bottomleft:6px; border-bottom-left-radius:6px; -webkit-border-radius-bottomright:6px; -moz-border-radius-bottomright:6px; border-bottom-right-radius:6px; -webkit-box-shadow:0 2px 7px rgba(0, 0, 0, 0.3); -moz-box-shadow:0 2px 7px rgba(0, 0, 0, 0.3); box-shadow:0 2px 7px rgba(0, 0, 0, 0.3); -webkit-background-clip:padding-box; -moz-background-clip:padding-box; background-clip:padding-box;}
+#top_outer .crossn li:hover dd.login{width:184px; padding:15px 10px;}
+#top_outer .crossn li:hover dd.user{min-width:80px;}
+#top_outer .crossn li:hover dd.user a{display:block; height:21px; line-height:21px; overflow:hidden;}
+
+/************************** 临时 start **************************/
+#bodyer .logo{display:none;}
+/************************** 临时 end **************************/

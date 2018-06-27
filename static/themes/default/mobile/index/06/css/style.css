@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.banner{position:relative;}
+.banner img{vertical-align:middle;}
+.banner .btn{position:absolute; left:0; width:100%; bottom:.3125rem; text-align:center;}
+.banner .btn span{display:inline-block; content:''; width:.3125rem; height:.3125rem; border-radius:1rem; background:#fff; margin:0 .1%;}
+.banner .btn span.on{background:#ccc;}
+.banr2 img{vertical-align:middle}
+
+.little{padding:.625rem 0; background:#ebeced;}
+.little .item{-webkit-box-sizing:border-box; box-sizing:border-box; border-color:solid; width:29.5312%; background:#fff; border-radius:.03rem; margin-left:2.9%;}
+.little .item .c{width:92.5925%; margin:0 auto; padding:.3125rem 0; min-height:1.64rem;}
+.little .item .c .img img{vertical-align:middle;}
+.little .item .c .name{line-height:.875rem; padding-top:.3125rem;}
+.little .item .c .name a{color:#333; font-size:.75rem;}
+
+.home_list .cht{height:2.8125rem; line-height:2.8125rem; margin-bottom:.13rem; padding-left:3.28125%; font-size:1rem; color:#333; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.home_list .container{display:none;}
+.home_list .container .box{width:93.75%; margin:0 auto .9375rem; overflow:hidden; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.home_list .item{width:48.5%; height:14.6rem; border-color:#d8d9da; border-radius:.125rem; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.home_list .item .c{width:91%; margin:0 auto; padding-top:.625rem;}
+.home_list .item .c .img{height:9.375rem; text-align:center; background:url(../../../images/loading.gif) no-repeat center; background-size:11.72%;}
+.home_list .item .c .img img{vertical-align:middle; max-height:100%;}
+.home_list .item .c .img .icon_discount{position:absolute; top:0; right:0; width:2.375rem; height:1.5625rem; color:#fff; line-height:.75rem; padding-top:.3125rem;}
+.home_list .item .c .img .icon_discount b{font-size:1rem;}
+.home_list .item .c .img .icon_discount_foot{width:0; height:0; border-width:.3125rem 1.1875rem 0; border-style:solid; border-left-color:transparent; border-right-color:transparent; position:absolute; right:0; top:1.875rem;}
+.home_list .item .c .img .icon_seckill{line-height:1.25rem; overflow:hidden; padding:0 .375rem; color:#fff; position:absolute; top:.375rem; left:.375rem; display:none;}
+.home_list .item .c .proname{max-height:1.6rem; line-height:.875rem; overflow:hidden; padding-top:.375rem;}
+.home_list .item .c .proname a{color:#333;}
+.home_list .item .c .star{line-height:.65rem; padding-top:.375rem; color:#e56f1d;}
+.home_list .item .c .star>span{margin-left:.3rem; font-size:.65rem; color:#828282;}
+.home_list .item .c .star .review_star, .home_list .item .c .star .review_star>span:first-child{margin-left:0;}
+.home_list .item .c .star .review_star>span{width:.75rem; height:.75rem; margin-left:.1rem;}
+.home_list .item .c .price{line-height:.75rem; padding-top:.375rem; padding-bottom:.625rem; color:#696969;}
+.home_list .item .c .price span{color:#d70d0d;}
+.home_list .item:nth-child(odd){margin-right:3%;}
+.home_list .slide{margin:0 auto 0.23rem; width:12.03125%;}
+.home_list.on .cht:after{-webkit-transform:rotate(0deg); transform:rotate(0deg);}
+.home_list.on .container{background:#fff; display:block;}
+
+
+
+
+

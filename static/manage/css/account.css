@@ -1,0 +1,68 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+@-webkit-keyframes moveCount{form{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes moveCount{form{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}
+@-o-keyframes moveCount{form{-o-transform:rotate(0);}to{-o-transform:rotate(360deg);}}
+@keyframes moveCount{form{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+/***** 登录界面 Start *****/
+#login{width:840px; height:361px; background:#fff; margin:0 auto; margin-top:300px;}
+#login .limg{width:348px; float:left; background-color:#4aac7d; overflow:hidden;}
+#login .limg div{width:348px; height:361px; text-align:center;}
+#login .limg div img{ max-width:100%;}
+#login .limg div h1{display:block; width:348px; height:361px; overflow:hidden; font-size:1px;}
+#login form{float:left; width:490px;}
+#login form h2{height:59px; line-height:59px; text-indent:35px; font-size:16px; border-bottom:1px solid #26b484; color:#2eb185; font-weight:bold;}
+#login form .f{width:410px; padding:0 40px;}
+#login form .f .input{border:1px solid #d8d8d8; height:26px; margin:30px 0; padding:10px 0; padding-left:40px;}
+#login form .f .input input{border:none; width:360px; height:26px; line-height:26px;}
+#login form .f .username{background:url(../images/account/login_account_bg.jpg) 14px 14px no-repeat;}
+#login form .f .password{background:url(../images/account/login_password_bg.jpg) 14px 14px no-repeat;}
+#login form .f .submit{color:#fff; width:410px; height:48px; line-height:48px; font-size:16px; font-weight:bold; background:#26b285; border:none;}
+/***** 登录界面 End *****/
+
+
+/***** 主界面 Start *****/
+.home_wrap{margin:0;}
+.mr22{margin-right:22px;}
+
+#account{padding:0 30px;}
+#account .home_box{padding:0 1.8%; width:45%; height:230px; overflow:hidden; margin-top:14px; float:left; background-color:#fff;}
+#account .home_box .box_title{height:28px; line-height:28px; overflow:hidden; margin-top:5px;}
+#account .home_traffic .traffic_time{height:28px; line-height:28px; overflow:hidden; margin-top:9px;}
+#account .home_traffic .traffic_time>a{margin:0 6px;}
+#account .home_traffic .traffic_time>a:first-child{margin-left:0;}
+#account .home_traffic .traffic_time>a.current{color:#54a18f;}
+#account .home_traffic .traffic_count{float:left; width:117px; height:117px; margin:12px 1% 25px; text-align:center; overflow:hidden; cursor:default; position:relative;}
+#account .home_traffic .traffic_count>h2{font-size:30px; margin-top:31px; color:#53a28f;}
+#account .home_traffic .traffic_count>span{color:#636363;}
+#account .home_traffic .traffic_count .traffic{position:absolute; left:0; top:0; width:117px; height:117px; background:url(../images/account/home_icon.png) no-repeat;}
+#account .home_traffic .traffic_count .traffic:hover{-webkit-animation:moveCount .5s;-moz-animation:moveCount .5s;-o-animation:moveCount 5s;animation:moveCount .5s;}
+#account .home_traffic .traffic_count .traffic_to{background-position:-127px 0;}
+#account .home_traffic .traffic_order>h2, #account .home_traffic .traffic_sales>h2{color:#d10000;}
+#account .data_list{padding:10px 0;}
+#account .data_list .data_left{float:left; width:80px; border-right:1px #e1e1e1 solid; height:36px; line-height:36px; overflow:hidden; text-align:right; padding-right:10px;}
+#account .data_list .data_right{float:left; width:80%; height:20px; line-height:20px; margin:8px 0; background-color:#e6e6e6; position:relative; overflow:hidden;}
+#account .data_list .process{background-color:#53a18e; height:20px; text-indent:10px; color:#fff; width:0;}
+#account .home_circle{float:left; margin-top:5px;}
+#account .home_circle .circle_title{height:40px; line-height:40px; overflow:hidden;}
+#account .home_circle .circle_container{background:#fff; border-radius:5px; height:258px; overflow:hidden; position:relative;}
+#account .home_order{width:48.6%;}
+#account .home_order .circle_container{padding:0 13px;}
+#account .home_map{width:48.6%;}
+#account .home_keyword{width:98.6%;}
+#account .home_keyword .circle_container{height:auto;}
+#account .google_keyword_table td{text-align:left;}
+#account .google_keyword_table td>span{width:40px; float:left; display:inline-block;}
+#account .google_keyword_table td>em{width:7px; height:8px; float:left; display:inline-block; margin-top:6px; background-image:url(../images/account/home_icon.png);}
+#account .google_keyword_table td>em.up{background-position:0 -121px;}
+#account .google_keyword_table td>em.down{background-position:-15px -121px;}
+#account .google_keyword_table td.no_list{height:60px; line-height:60px; text-align:center; font-size:14px;}
+#world_map{width:100%; height:258px;}
+/***** 主界面 End *****/
+
+
+
+

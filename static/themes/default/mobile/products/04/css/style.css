@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+
+.home_box{width:93.4%; height:14rem; overflow:hidden; margin:.75rem auto;}
+.home_box .small_pro{width:49.72%;}
+.home_box .small_pro .c{width:91.6%; margin:0 auto; padding-top:.75rem; background-color:#fff;}
+.home_box .small_pro .c .img{height:9rem; min-height:9rem; width:100%; text-align:center; background:url(../../../images/loading.gif) no-repeat center; background-size:11.7%; position:relative;}
+.home_box .small_pro .c .img img{vertical-align:middle; max-height:100%;}
+.home_box .small_pro .c .img .icon_discount{width:38px; height:25px; color:#fff; line-height:12px; padding-top:5px; position:absolute; top:0; right:0;}
+.home_box .small_pro .c .img .icon_discount b{font-size:16px;}
+.home_box .small_pro .c .img .icon_discount_foot{width:0; height:0; border-left:19px transparent solid; border-right:19px transparent solid; border-top-width:5px; border-top-style:solid; position:absolute; right:0; top:30px;}
+.home_box .small_pro .c .proname{height:2rem; overflow:hidden; padding-top:.625rem; line-height:1rem;}
+.home_box .small_pro .c .proname a{font-size:.75rem; color:#333;}
+.home_box .small_pro .c .price{line-height:1rem; padding-top:.125rem; padding-bottom:.625rem; font-size:.75rem; color:#696969;}
+.home_box .small_pro .c .price span{font-size:.75rem; color:#d70d0d;}
+.home_box .small_pro .c .price del{ color:#888; margin-left:1rem;}
+.home_box .small_pro .c .price del span{ color:#888;}

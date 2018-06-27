@@ -1,0 +1,44 @@
+/*
+ * Powered by ueeshop.com		http://www.ueeshop.com
+ * 广州联雅网络科技有限公司		020-83226791
+ */
+@charset "utf-8";
+
+.tuan_head{height:2.5rem; line-height:2.5rem; text-align:center; position:relative;}
+.tuan_head .tuan_title{font-size:1rem;}
+.tuan_head .tuan_deals_menu{width:2.5rem; height:2.5rem; overflow:hidden; background:url(../../images/header_icon_2.png) no-repeat center; background-size:60%; border:0; position:absolute; right:.5rem; top:0;}
+.tuan_head .tuan_deals_menu>select{width:6rem; height:2.5rem; text-indent:6rem; float:left;}
+
+.tuan_menu{padding:.625rem; background-color:#f7f7f7; position:relative;}
+.tuan_menu .category{height:4.35rem; overflow:hidden; position:relative;}
+.tuan_menu .category_fixed{width:100%; position:absolute; top:0;}
+.tuan_menu .category_fixed>a{height:1.75rem; line-height:1.75rem; overflow:hidden; margin-right:.625rem; margin-bottom:.625rem; padding:0 .625rem; text-decoration:none; font-family:Verdana; color:#333; background-color:#fff; border:1px #e3e3e3 solid; display:inline-block; vertical-align:top;}
+.tuan_menu .category_fixed>a.current{color:#fff; background-color:#0063ae; border-color:#0063ae;}
+
+.tuan_btn{padding-bottom:.5rem; text-align:center; display:none;}
+.tuan_btn .btn_more{width:6rem; height:2.15rem; overflow:hidden; text-transform:lowercase; font-size:1rem; color:#0063ae; background-color:#f7f7f7; border:0; border-bottom-left-radius:2px; border-bottom-right-radius:2px; display:inline-block;}
+.tuan_btn .btn_more>i{width:.625rem; height:.375rem; margin:.25rem auto 0; background:url(../images/icon_menu.png) no-repeat; display:block; transform:rotate(0deg); -moz-transform:rotate(0deg); -webkit-transform:rotate(0deg); transition:transform 0.4s ease-out; -moz-transition:-moz-transform 0.4s ease-out; -webkit-transition:-webkit-transform 0.4s ease-out;}
+.tuan_btn .btn_more.hide>i{transform:rotate(180deg); -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg);}
+
+#prolist{background-color:#f8f8f8;}
+#prolist .item{margin-bottom:.5rem; padding:.75rem .625rem; background-color:#fff;}
+#prolist .item .img{width:6.25rem; height:6.25rem; text-align:center; background:url(../../../images/loading.gif) no-repeat center; background-size:13.38%; position:relative;}
+#prolist .item .img img{vertical-align:middle; max-height:100%;}
+#prolist .item .img .icon_discount{position:absolute; top:0; left:0; width:2.375rem; height:1.5625rem; color:#fff; line-height:.75rem; padding-top:.3125rem;}
+#prolist .item .img .icon_discount b{font-size:1rem;}
+#prolist .item .img .icon_discount_foot{width:0; height:0; border-width:.3125rem 1.1875rem 0; border-style:solid; border-left-color:transparent; border-right-color:transparent; position:absolute; left:0; top:1.875rem;}
+#prolist .item .desc{margin-left:7rem;}
+#prolist .item .desc .name{height:2rem; line-height:1rem; overflow:hidden;}
+#prolist .item .desc .name a{font-size:.875rem; color:#333;}
+#prolist .item .desc .rows{width:100%; line-height:1rem; padding-top:.5rem; float:left;}
+#prolist .item .desc .view_review{color:#9a9a9a; display:inline-block; vertical-align:top; float:left;}
+#prolist .item .desc .view_review .review_star{margin-right:.3rem;}
+#prolist .item .desc .view_sold{color:#9a9a9a; float:right;}
+#prolist .item .desc .old_price{display:inline-block;}
+#prolist .item .desc .old_price>del{font-size:.75rem; color:#999;}
+#prolist .item .desc .price{margin-right:.5rem; display:inline-block;}
+#prolist .item .desc .price, #prolist .item .desc .price span{font-size:1.25rem; color:#e75406;}
+#prolist .item .desc .btn_cart{width:100%; line-height:2rem; overflow:hidden; text-align:center; text-decoration:none; font-size:.875rem; color:#fff; background-color:#0063ae; border-radius:.2rem; display:block;}
+#prolist .btn_view{height:inherit; line-height:inherit; margin:0; padding:1rem 0; background-color:#fff;}
+
+

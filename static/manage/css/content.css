@@ -1,0 +1,25 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+#news .r_con_table tr td span.other_box{white-space:nowrap; margin-right:5px;}
+#news .r_con_table .attr_list .attr_box{width:180px; height:30px; overflow:hidden; margin-right:10px; margin-bottom:6px; background-color:#fff; border:1px #ddd solid; float:left; position:relative;}
+#news .r_con_table .attr_list .attr_box>dd{float:left;}
+#news .r_con_table .attr_list .attr_box>dd.attr_ico{width:30px; height:30px; background:url(../images/products/move.png) no-repeat center center #f7f7f7; cursor:move;}
+#news .r_con_table .attr_list .attr_box>dd.attr_txt{width:150px; line-height:30px; overflow:hidden; text-indent:5px; cursor:default;}
+#news .r_con_table .attr_list .attr_box>dd.attr_menu{width:50px; height:30px; line-height:26px; text-align:center; background-color:#f7f7f7; border-left:1px #ddd solid; position:absolute; top:0; right:-51px; z-index:10;}
+#news .r_con_table .attr_list .attr_add{width:30px; height:30px; line-height:28px; overflow:hidden; margin-right:10px; margin-bottom:6px; background-color:#fff; border:1px #ddd solid; float:left; position:relative; text-align:center;}
+#news .r_con_table .attr_list .attr_add>a{display:block; text-decoration:none; font-size:20px;}
+#news .r_con_table .attr_list .placeHolder{border:1px #ddd dotted;}
+
+
+#ad .rows .adpic_row{padding:6px 0;}
+#ad .rows .adpic_row:hover{cursor:pointer;}
+#ad .rows .adpic_row .price_input{display:block; margin-top:11px;}
+#ad .rows .adpic_row .price_input:first-child{margin-top:0px;}
+#ad .rows .adpic_row .drag_bg{width:18px; height:49px; overflow:hidden; margin-left:4%; margin-top:32px; display:none; background:url(../images/frame/drag_arrows.png) no-repeat center;}
+#ad .rows .adpic_row:hover .drag_bg{display:block;}
+#ad .rows .adpic_row .multi_img .img .preview_pic>a{cursor:default;}
+#ad .rows .adpic_row .multi_img .img .preview_pic>a.zoom{cursor:pointer;}
+

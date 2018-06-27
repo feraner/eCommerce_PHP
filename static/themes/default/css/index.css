@@ -1,0 +1,101 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #banner .banner{width:940px; height:472px;}
+.w_1200 #banner .banner dt{width:940px; height:360px;}
+.w_1200 .banner dt .bd ul li, .w_1200 .banner dt .bd ul li a, .w_1200 .banner dt .bd img{width:940px; height:360px;}
+.w_1200 #main .pro_right{width:940px;}
+.w_1200 #banner .banner dd li{width:136px; padding:0 50px 0 110px;}
+.w_1200 #banner .banner dd li.middle{width:184px;}
+.w_1200 #banner .banner dd li .img{left:50px;}
+
+.w_1200 .prod_box{width:210px; margin-left:20px; min-height:375px;}
+.w_1200 .prod_box .prod_box_pic{height:206px;}
+.w_1200 .prod_box .prod_box_pic .thumb_hover{width:210px; height:210px;}
+.w_1200 .prod_box .prod_box_button .wishlist, .w_1200 .prod_box .prod_box_button .compare{width:40px;}
+.w_1200 .prod_box.first, .w_1200 .prod_box:first-child{margin-left:0;}
+
+.w_1200 .prod_box_0{min-height:inherit;}
+
+.w_1200 .prod_box_1{margin-bottom:0;}
+
+.w_1200 .prod_box_2{width:208px; min-height:300px; margin-bottom:30px;}
+.w_1200 .prod_box_2 .prod_box_pic{height:208px;}
+.w_1200 .prod_box_2 .add_cart_box .add_cart_bg{top:173px; width:208px;}
+.w_1200 .prod_box_2 .add_cart_box .add_cart{top:173px; width:208px; background-position:48px -140px;}
+
+.w_1200 .prod_box_3{width:188px; padding:10px 10px 0; min-height:310px;}
+.w_1200 .prod_box_3 .prod_box_pic{height:184px;}
+
+.w_1200 .prod_box_4 .prod_action .addtocart{margin-left:5px;}
+
+.w_1200 .prod_box_5{min-height:inherit;}
+.w_1200 .prod_box_5 .prod_box_pic{height:200px;}
+.w_1200 .prod_box_5 .prod_box_pic.pic_enlarge{height:210px;}
+
+.w_1200 .prod_box_6{min-height:inherit;}
+.w_1200 .prod_box_6 .prod_box_pic{height:210px;}
+/***************************宽屏样式(end)***************************/
+
+/*广告图*/
+#banner{background-color:#eee;}
+.banner{width:720px; height:388px; padding:24px 0 16px 260px; overflow:hidden;}
+.banner dt{display:block; width:720px; height:276px; background-color:#fff; overflow:hidden;}
+.banner dt .bd li, .banner dt .bd li a, .banner dt .bd img{width:720px; height:276px;}
+.banner dd{border:1px solid #dedede; background-color:#fff; height:96px; margin-top:14px;}
+.banner dd li{width:134px; height:56px; float:left; display:block; padding:0 20px 0 76px; margin:20px 0; border-left:1px solid #e1e1e1; position:relative;}
+.banner dd li:first-child{border:none;}
+.banner dd li.middle{width:160px;}
+.banner dd li a{text-decoration:none;}
+.banner dd li .img{width:56px; height:56px; overflow:hidden; position:absolute; left:20px; top:0;}
+.banner dd li h2{font-size:14px; font-weight:bold; height:28px; line-height:28px; overflow:hidden;}
+.banner dd li span{display:block; height:32px; line-height:16px; overflow:hidden;}
+
+#main{padding:20px 0;}
+#main .pro_left{width:238px; margin-right:22px;}
+#main .pro_left .sidebar:first-child{margin-top:0px;}
+#main .pro_left .ad{margin-top:20px;}
+#main .pro_left .popular_search .view{height:230px; overflow:hidden;}
+#main .pro_right{width:720px; overflow:hidden;}
+#main .pro_right .ad{margin-bottom:20px;}
+
+/*产品列表*/
+.prod_list{border:1px solid #f2f2f2; padding:0 18px; margin-bottom:20px;}
+.prod_list .title{height:36px; line-height:36px; padding:0 5px; border-bottom:1px dashed #ccc;}
+.prod_list .title h3{font-size:15px;}
+
+.prod_box{width:160px; margin-left:12px; margin-bottom:20px; min-height:325px;}
+.prod_box .prod_box_pic{height:156px;}
+.prod_box .prod_box_pic .thumb_hover{width:160px; height:160px;}
+.prod_box .prod_box_inner .pro_name{height:36px; overflow:hidden; line-height:145%; padding-top:8px;}
+.prod_box .prod_box_inner .pro_price{line-height:120%;}
+.prod_box .prod_box_inner del{font-size:12px; color:#666; margin-left:5px;}
+.prod_box .prod_box_inner del .currency_data, .prod_box .prod_box_inner del .price_data{font-size:12px; font-weight:normal;}
+.prod_box .prod_box_inner .pro_view{padding-top:8px; padding-bottom:8px;}
+.prod_box .prod_box_inner .favorite{float:right; position:relative;}
+.prod_box .prod_box_button .wishlist, .prod_box .prod_box_button .compare{width:51px;}
+.prod_box .add_cart_box .add_cart_bg{top:125px; width:159px;}
+.prod_box .add_cart_box .add_cart{top:125px; width:159px; background-position:16px -140px;}
+.prod_box.first, .prod_box:first-child{margin-left:0;}
+
+.prod_box_0{min-height:inherit;}
+
+.prod_box_1{margin-bottom:0;}
+
+.prod_box_2{width:159px; min-height:270px;}
+.prod_box_2 .prod_box_pic{height:159px;}
+
+.prod_box_3{width:147px; min-height:260px;}
+.prod_box_3 .prod_box_pic{height:143px;}
+
+.prod_box_4 .prod_action .addtocart{margin-left:18px; opacity:1;}
+
+.prod_box_5{min-height:inherit;}
+.prod_box_5 .prod_box_pic{height:150px; padding:5px; border:0;}
+.prod_box_5 .prod_box_pic.pic_enlarge{height:160px; padding:0;}
+
+.prod_box_6{min-height:inherit;}
+.prod_box_6 .prod_box_pic{height:160px; border:0;}

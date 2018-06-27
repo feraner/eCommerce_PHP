@@ -1,0 +1,18 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+@charset "utf-8";
+
+.home_list .item{height:3rem; border-bottom:.125rem #dadada solid;}
+.home_list .item:nth-child(4n+1){background:linear-gradient(90deg, #d4358a 0%,#d4358a 1.25%,#fff 1.25%,#fff 100%);}
+.home_list .item:nth-child(4n+2){background:linear-gradient(90deg, #3fc9bd 0%,#3fc9bd 1.25%,#fff 1.25%,#fff 100%);}
+.home_list .item:nth-child(4n+3){background:linear-gradient(90deg, #5a5a5a 0%,#5a5a5a 1.25%,#fff 1.25%,#fff 100%);}
+.home_list .item:nth-child(4n){background:linear-gradient(90deg, #3b3b3b 0%,#3b3b3b 1.25%,#fff 1.25%,#fff 100%);}
+
+.home_list .item .img{width:12.5%; height:100%; margin-left:2.6562%;}
+.home_list .item .img img{vertical-align:middle;}
+.home_list .item .name{width:81.875%; height:100%; line-height:3rem; overflow:hidden;}
+.home_list .item .name a{font-size:1rem; color:#666;}
+
+

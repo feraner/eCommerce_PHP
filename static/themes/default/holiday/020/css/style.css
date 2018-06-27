@@ -1,0 +1,25 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #bodyer, .w_1200 #bodyer .wide{min-width:auto;}
+.w_1200 #footer_outer{min-width:980px;}
+/***************************宽屏样式(end)***************************/
+
+body{background:#fff;}
+#bodyer{background:#000;}
+#bodyer .wide{position:relative;}
+#bodyer .main_top{height:433px; margin-bottom:15px;}
+#bodyer .logo{position:absolute; left:0; top:0;}
+#bodyer .mr_0{margin-right:0;}
+
+#bodyer, #bodyer .wide, #footer_outer{min-width:1200px;}
+
+.box_one{width:589px; height:363px; overflow:hidden; margin-right:19px;}
+
+.box_to{width:387px; height:508px; overflow:hidden; margin-right:18px;}
+
+.list_box .t1{margin-right:4px;}
+.list_box .t2{margin-right:4px; margin-bottom:5px;}

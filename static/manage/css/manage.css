@@ -1,0 +1,24 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+#manage #edit_form{background:#fff;}
+#manage .m_lefter{width:40%; float:left;}
+#manage .m_lefter .rows>label{width:25%;}
+#manage .m_lefter .rows .input{width:65%;}
+#manage .m_lefter textarea{width:280px;}
+#manage .m_righter{width:50%; float:left; padding:10px;}
+#manage .m_righter .PermitHead{border-bottom:1px solid #e8e8e8; height:28px; font-weight:bold; color:#555; text-indent:5px;}
+#manage .m_righter .module{text-indent:5px; color:#888; font-size:12px; border-bottom:1px solid #e8e8e8; margin-right:5px; line-height:32px;}
+#manage .m_righter .module:hover{background:#e7f7f3;}
+#manage .m_righter dl dt, #manage .m_righter dl dd{float:left; line-height:normal; padding:6px 0;}
+#manage .m_righter dl dt{margin-left:30px;}
+#manage .m_righter dl dd{width:73%; margin-left:10px;}
+#manage .m_righter dl dd>input{margin-left:10px;}
+
+#course .course_list{background:#fff; min-height:600px; min-width:1000px; padding:5px;}
+#course .course_list ul{float:left; width:250px;}
+#course .course_list ul li{height:36px; line-height:36px; text-indent:15px;}
+#course .course_list ul li a{color:green;}
+#course .course_list .view{float:left; width:720px; margin:15px 0; text-align:center; height:600px; line-height:600px; border:1px solid #e8e8e8; color:#999;}

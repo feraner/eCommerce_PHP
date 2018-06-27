@@ -1,0 +1,31 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #bodyer, .w_1200 #bodyer .wide{min-width:auto;}
+.w_1200 #footer_outer{min-width:980px;}
+/***************************宽屏样式(end)***************************/
+
+body{background:#fff;}
+#bodyer{background:#000;}
+#bodyer .wide{position:relative;}
+#bodyer .main_top{height:365px; cursor:pointer;}
+#bodyer .main_bottom{background:#fbd189; padding:20px 0 50px;}
+#bodyer .logo{position:absolute; left:0; top:0;}
+
+#bodyer, #bodyer .wide, #footer_outer{min-width:1200px;}
+
+.banner_0{margin-top:20px; width:1200px; height:563px; overflow:hidden;}
+.banner_1{margin-top:20px; width:1200px; height:421px; overflow:hidden; margin-bottom:27px;}
+
+.pro_list .list_head{height:52px; line-height:52px; color:#fff; font-size:16px; font-weight:bold;}
+.pro_list .item{overflow:hidden;}
+.pro_list .item.mr_0{margin-right:0;}
+
+.pro_list_0{margin-bottom:23px;}
+.pro_list_0 .list_body{background:#fff; padding:16px 16px 0;}
+.pro_list_0 .item{width:377px; margin-right:18px;}
+
+.pro_list_1 .item{width:300px; height:120px; text-align:center; vertical-align:middle;}

@@ -1,0 +1,151 @@
+<?php
+/****************************************************
+CallerService.php
+
+This file uses the constants.php to get parameters needed 
+to make an API call and calls the server.if you want use your
+own credentials, you have to change the constants.php
+
+Called by TransactionDetails.php, ReviewOrder.php, 
+DoDirectPaymentReceipt.php and DoExpressCheckoutPayment.php.
+
+****************************************************/
+include('constants.php');
+
+function nvpHeader(){
+	//global $API_Endpoint,$version,$API_UserName,$API_Password,$API_Signature,$nvp_Header, $subject, $AUTH_token,$AUTH_signature,$AUTH_timestamp;
+	defined('API_USERNAME') && $API_UserName=API_USERNAME;
+	defined('API_PASSWORD') && $API_Password=API_PASSWORD;
+	defined('API_SIGNATURE') && $API_Signature=API_SIGNATURE;
+	defined('API_ENDPOINT') && $API_Endpoint=API_ENDPOINT;
+	defined('SUBJECT') && $subject=SUBJECT;
+	defined('AUTH_TOKEN') && $AUTH_token=AUTH_TOKEN;
+	defined('AUTH_SIGNATURE') && $AUTH_signature=AUTH_SIGNATURE;
+	defined('AUTH_TIMESTAMP') && $AUTH_timestamp=AUTH_TIMESTAMP;
+	$version=VERSION;
+	$nvpHeaderStr = "";
+	
+	if(defined('AUTH_MODE')){
+		//$AuthMode = "3TOKEN"; //Merchant's API 3-TOKEN Credential is required to make API Call.
+		//$AuthMode = "FIRSTPARTY"; //Only merchant Email is required to make EC Calls.
+		//$AuthMode = "THIRDPARTY";Partner's API Credential and Merchant Email as Subject are required.
+		$AuthMode = "AUTH_MODE"; 
+	}else{
+		if((!empty($API_UserName)) && (!empty($API_Password)) && (!empty($API_Signature)) && (!empty($subject))){
+			$AuthMode = "THIRDPARTY";
+		}elseif((!empty($API_UserName)) && (!empty($API_Password)) && (!empty($API_Signature))){
+			$AuthMode = "3TOKEN";
+		}elseif(!empty($AUTH_token) && !empty($AUTH_signature) && !empty($AUTH_timestamp)){
+			$AuthMode = "PERMISSION";
+		}elseif(!empty($subject)){
+			$AuthMode = "FIRSTPARTY";
+		}
+	}
+	switch($AuthMode) {
+		case "3TOKEN" : 
+				$nvpHeaderStr = "&PWD=".urlencode($API_Password)."&USER=".urlencode($API_UserName)."&SIGNATURE=".urlencode($API_Signature);
+				break;
+		case "FIRSTPARTY" :
+				$nvpHeaderStr = "&SUBJECT=".urlencode($subject);
+				break;
+		case "THIRDPARTY" :
+				$nvpHeaderStr = "&PWD=".urlencode($API_Password)."&USER=".urlencode($API_UserName)."&SIGNATURE=".urlencode($API_Signature)."&SUBJECT=".urlencode($subject);
+				break;		
+		case "PERMISSION" :
+				$nvpHeaderStr = formAutorization($AUTH_token,$AUTH_signature,$AUTH_timestamp);
+				break;
+	}
+	return $nvpHeaderStr;
+}
+
+/**
+  * hash_call: Function to perform the API call to PayPal using API signature
+  * @methodName is name of API  method.
+  * @nvpStr is nvp string.
+  * returns an associtive array containing the response from the server.
+*/
+function hash_call($methodName, $nvpStr){
+	//declaring of global variables
+	//global $API_Endpoint,$version,$API_UserName,$API_Password,$API_Signature,$nvp_Header, $subject, $AUTH_token,$AUTH_signature,$AUTH_timestamp;
+	defined('API_USERNAME') && $API_UserName=API_USERNAME;
+	defined('API_PASSWORD') && $API_Password=API_PASSWORD;
+	defined('API_SIGNATURE') && $API_Signature=API_SIGNATURE;
+	defined('API_ENDPOINT') && $API_Endpoint =API_ENDPOINT;
+	defined('SUBJECT') && $subject = SUBJECT;
+	defined('AUTH_TOKEN') && $AUTH_token= AUTH_TOKEN;
+	defined('AUTH_SIGNATURE') && $AUTH_signature=AUTH_SIGNATURE;
+	defined('AUTH_TIMESTAMP') && $AUTH_timestamp=AUTH_TIMESTAMP;
+	$version=VERSION;
+	$nvpheader=nvpHeader(); //form header string
+	$ch=curl_init(); //setting the curl parameters.
+	curl_setopt($ch, CURLOPT_URL, $API_Endpoint);
+	curl_setopt($ch, CURLOPT_VERBOSE, 1);
+	//turning off the server and peer verification(TrustManager Concept).
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_POST, 1);
+	//in case of permission APIs send headers as HTTPheders
+	if(!empty($AUTH_token) && !empty($AUTH_signature) && !empty($AUTH_timestamp)){
+		$headers_array[] = "X-PP-AUTHORIZATION: ".$nvpheader;
+    	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers_array);
+		curl_setopt($ch, CURLOPT_HEADER, false);
+	}else{
+		$nvpStr=$nvpheader.$nvpStr;
+	}
+    //if USE_PROXY constant set to TRUE in Constants.php, then only proxy will be enabled.
+	//Set proxy name to PROXY_HOST and port number to PROXY_PORT in constants.php 
+	if(USE_PROXY){
+		curl_setopt($ch, CURLOPT_PROXY, PROXY_HOST.":".PROXY_PORT);
+	}
+	//check if version is included in $nvpStr else include the version.
+	if(strlen(str_replace('VERSION=', '', strtoupper($nvpStr))) == strlen($nvpStr)){
+		$nvpStr="&VERSION=".urlencode($version).$nvpStr;	
+	}
+	$nvpreq="METHOD=".urlencode($methodName).$nvpStr;
+	curl_setopt($ch,CURLOPT_POSTFIELDS,$nvpreq); //setting the nvpreq as POST FIELD to curl
+	$response=curl_exec($ch); //getting response from server
+	
+	file::write_file('/_pay_log_/paypal_excheckout/log/'.date('Y_m/d/', time()), "test.txt", date('Y-m-d H:i:s', time())."\r\n\r\n".(ly200::is_mobile_client(1)==1?'Mobile':'PC')."\r\n\r\n".$response);	//把返回数据写入文件
+	//convrting NVPResponse to an Associative Array
+	$nvpResArray=deformatNVP($response);
+	$nvpReqArray=deformatNVP($nvpreq);
+	$_SESSION['Gateway']['PaypalExcheckout']['nvpReqArray']=$nvpReqArray;
+	
+	if(curl_errno($ch)){ //moving to display page to display curl errors
+		$_SESSION['Gateway']['PaypalExcheckout']['curl_error_no']=curl_errno($ch) ;
+		$_SESSION['Gateway']['PaypalExcheckout']['curl_error_msg']=curl_error($ch);;
+		$location="APIError.php";
+		header("Location: $location");
+	}else{ //closing the curl
+		curl_close($ch);
+	}
+	return $nvpResArray;
+}
+
+/** This function will take NVPString and convert it to an Associative Array and it will decode the response.
+  * It is usefull to search for a particular key and displaying arrays.
+  * @nvpstr is NVPString.
+  * @nvpArray is Associative Array.
+  */
+function deformatNVP($nvpstr){
+	$intial=0;
+ 	$nvpArray=array();
+	while(strlen($nvpstr)){
+		$keypos=strpos($nvpstr, '='); //postion of Key
+		$valuepos=strpos($nvpstr, '&') ? strpos($nvpstr, '&') : strlen($nvpstr); //position of value
+		/*getting the Key and Value values and storing in a Associative Array*/
+		$keyval=substr($nvpstr, $intial, $keypos);
+		$valval=substr($nvpstr, $keypos+1, $valuepos-$keypos-1);
+		//decoding the respose
+		$nvpArray[urldecode($keyval)]=urldecode($valval);
+		$nvpstr=substr($nvpstr, $valuepos+1, strlen($nvpstr));
+     }
+	return $nvpArray;
+}
+
+function formAutorization($auth_token,$auth_signature,$auth_timestamp){
+	$authString="token=".$auth_token.",signature=".$auth_signature.",timestamp=".$auth_timestamp;
+	return $authString;
+}
+?>

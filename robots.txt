@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /inc/
+Allow: /static/themes/default/mobile/
+Disallow: /static/
+Disallow: /account/
+Disallow: /tmp/

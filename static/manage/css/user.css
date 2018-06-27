@@ -1,0 +1,59 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+#reg_set .fixed{width:35%; margin-right:2%;}
+#reg_set .custom{width:61%;}
+#reg_set .fixed .rows_hd{height:45px; line-height:45px; background:#fff; padding-left:5%; font-weight:bold;}
+#reg_set .r_con_table td{text-align:left; padding-left:5%;}
+#reg_set .r_con_wrap{width:100%; padding:0 20px;}
+#reg_set .r_con_form{background:#fff; padding-bottom:30px;}
+#reg_set .custom .rows_hd, #reg_set .r_con_form .rows_hd{height:48px; line-height:48px; text-indent:21px; font-weight:bold; border-left:3px #55a290 solid; background:#fff;}
+
+#user #explode_progress{padding:20px; line-height:200%;}
+#user .module_title{height:36px; line-height:36px; background:#eee;}
+#user .module_title li{float:left; padding:0 30px; margin-right:3px;}
+#user .module_title li a{float:left; font-size:14px; color:#666;}
+#user .module_title li.cur{background:#53a18e;}
+#user .module_title li.cur a{font-weight:bold; color:#fff;}
+#user #lib_user_address .billing_addr, #user #lib_user_address .shipping_addr{border-bottom:1px #ccc solid; padding:10px;}
+#user #lib_user_address .big{margin-bottom:15px; font-size:14px; font-family:georgia; color:#666;}
+#user #lib_user_address .addr_item{width:230px; margin-right:10px; margin-bottom:15px;}
+#user #lib_user_address .addr_item li{margin-bottom:5px; font-family:verdana; line-height:150%;}
+#user #lib_user_address .textbtn{height:23px; line-height:23px; padding:0 7px; background:url(/static/themes/default/images/pro_item_add.jpg) repeat-x; border:1px #c8c8c8 solid; border-radius:4px; -webkit-border-radius:4px; box-shadow:0 2px 2px #eee; cursor:pointer; color:#666; font-size:12px; display:inline-block; margin-right:10px;}
+#user #lib_user_address .textbtn:hover{color:#ff6600;}
+
+.sort_icon_arrow{background:url(../images/frame/filter.png) no-repeat -7px -24px;}
+.sort_icon_arrow_down{background:url(../images/frame/filter.png) no-repeat -130px -23px; margin-bottom:3px;}
+.sort_icon_arrow_up{background:url(../images/frame/filter.png) no-repeat -187px -23px; margin-bottom:3px;}
+#user .r_con_table thead td>a{color:#60666a;}
+#user .r_con_table thead td i{width:9px; height:11px; margin-left:7px; vertical-align:middle; display:inline-block; cursor:pointer;}
+#user .r_con_table tr td.img{height:50px; text-align:center;}
+
+.user_choice .user_menu{width:70%;}
+.user_choice .user_list{width:50%; height:278px; overflow-y:auto; border:1px #ccc solid; margin-top:10px; background:#fff;}
+.user_choice .user_list li{height:30px; line-height:30px; overflow:hidden; border-bottom:1px #ccc dotted; cursor:pointer;}
+.user_choice .user_list li input{cursor:pointer; margin-left:10px; margin-top:9px;}
+.user_choice .user_list li a{display:block; padding-left:33px; text-decoration:none;}
+.user_choice .user_list li a:hover{color:#333;}
+.user_choice .user_list li.current{background:#87aabe;}
+.user_choice .user_list li.current a{color:#fff;}
+.user_choice .clear_check{padding:0 30px; border:1px #32ad90 solid; text-align:center; height:33px; line-height:33px; margin-left:10px; cursor:pointer; background:#37bd9c; color:#fff;}
+
+#inbox .sub_btn{background:#37bd9c; border:1px #30ad8f solid; color:#fff; width:68px; height:26px; line-height:26px; cursor:pointer; margin-left:6px; display:inline-block;}
+#inbox .inbox_type_list dt{float:left; margin:3px 7px; border-right:1px #eee solid; width:1px; height:22px;}
+#inbox .inbox_type_list dd{float:left; padding:3px; line-height:22px;}
+#inbox .inbox_type_list dd a{font-size:12px; color:#747474;}
+#inbox .inbox_type_list dd a.current{color:#55A08C;}
+#inbox .r_con_form .rows .input .pic{ max-width:85px; max-height:85px; border:1px solid #ddd; margin-top:10px;}
+#inbox .r_con_table tbody tr td.img{ height:60px;}
+#inbox .r_con_form .bg{ background:#fbfbfb;}
+#inbox .r_con_form .dotted{ border-bottom:1px dotted #d8d8d8;}
+#inbox .r_con_form .dotted_top{ border-top:1px dotted #d8d8d8;}
+#inbox .r_con_form .reply label{ color:#53a18e;}
+#inbox .r_con_form .reply .input{ color:#555;}
+
+#jquery-lightbox #lightbox-container-image-box{width:600px!important; height:600px!important;}
+#jquery-lightbox #lightbox-image{max-width:100%; max-height:100%;}
+#jquery-lightbox #lightbox-container-image-data-box{width:580px!important;}

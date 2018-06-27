@@ -1,0 +1,36 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #bodyer, .w_1200 #bodyer .wide{min-width:auto;}
+.w_1200 #footer_outer{min-width:980px;}
+/***************************宽屏样式(end)***************************/
+
+body{background:#fff;}
+#bodyer{background:url(../images/body_bg.jpg) #fef1bd;}
+#bodyer .wide{position:relative; width:1178px; padding:0 11px; min-width:1178px;}
+#bodyer .main_top{height:739px; cursor:pointer;}
+#bodyer .main_bottom{background:#fbd189; padding:20px 0 50px;}
+#bodyer .logo{position:absolute; left:0; top:0;}
+
+#bodyer, #bodyer .wide, #bodyer .full, #footer_outer{min-width:1178px;}
+
+.banner_list{margin-left:6px; margin-bottom:57px;}
+.banner_list .list_head{height:263px; padding-bottom:15px;}
+.banner_list .t1{width:586px; height:506px; overflow:hidden;}
+.banner_list .t2{width:586px; height:253px; overflow:hidden;}
+
+.pro_list .list_head{height:102px; padding-bottom:14px;}
+.pro_list .list_menu a{padding:0 12px; height:30px; line-height:30px; overflow:hidden; border:2px #f8634b solid; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; display:inline-block; color:#f26949; margin-left:3px; font-weight:bold; font-size:14px; text-decoration:none; margin-bottom:3px;}
+.pro_list .list_menu a.current{background:#3b8183; border:2px #3b8183 solid; color:#fff;}
+.pro_list .list_body{min-height:350px; _height:350px;}
+
+.pro_item{width:215px; overflow:hidden; margin:13px 9px 8px; padding-bottom:9px; border:1px #e0e0e0 solid;}
+.pro_item>dt{padding:10px 14px 5px; text-align:center; height:190px;}
+.pro_item>dt img{max-width:100%; max-height:100%;}
+.pro_item>dd{padding:0 14px;}
+.pro_item .pro_name{line-height:22px; height:44px; overflow:hidden;}
+.pro_item .pro_price{height:17px; font-size:15px; color:#c00; font-weight:bold; height:28px; line-height:28px;}
+.pro_item .pro_view{height:28px; line-height:28px; text-align:center; background:#a40000; color:#fff; font-size:14px;}

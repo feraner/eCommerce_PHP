@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.pro_list{margin-top:.2rem;}
+.pro_list .item{padding:1rem .625rem;}
+.pro_list .item .desc{width:55%; margin-left:2%;}
+.pro_list .item .desc .n1{max-height:2rem; line-height:1rem; overflow:hidden; margin:.375rem 0;}
+.pro_list .item .desc .n1 a{font-size:.875rem; color:#333;}
+.pro_list .item .desc .n2{color:#666; line-height:1rem;}
+.pro_list .item .desc .price{margin-top:.75rem; margin-bottom:.3rem; font-size:1.5rem; color:#d60707;}
+.pro_list .item .desc .price del{ color:#888; font-size:1rem; margin-left:0.5rem;}
+.pro_list .item .desc .star{line-height:1.875rem; color:#e56f1d;}
+.pro_list .item .desc .star>span{margin-left:.3rem; font-size:.65rem; color:#828282;}
+.pro_list .item .desc .star .review_star{margin-left:0;}
+.pro_list .item .desc .star .review_star>span{width:.75rem; height:.75rem; margin-left:.1rem;}
+.pro_list .item .img{width:40%; height:9.375rem; text-align:center; background:url(../../../images/loading.gif) no-repeat center; background-size:13.38%; position:relative;}
+.pro_list .item .img img{vertical-align:middle; max-height:100%;}
+.pro_list .item .img .icon_discount{position:absolute; top:0; right:0; width:2.375rem; height:1.5625rem; color:#fff; line-height:.75rem; padding-top:.3125rem;}
+.pro_list .item .img .icon_discount b{font-size:1rem;}
+.pro_list .item .img .icon_discount_foot{width:0; height:0; border-width:.3125rem 1.1875rem 0; border-style:solid; border-left-color:transparent; border-right-color:transparent; position:absolute; right:0; top:1.875rem;}
+.pro_list .item .img .icon_seckill{line-height:1.25rem; overflow:hidden; padding:0 .375rem; color:#fff; position:absolute; top:.375rem; left:.375rem; display:none;}
+

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+.pbanner{border-bottom:.0625rem #ddd solid;}
+.pbanner img{vertical-align:middle;}
+
+.prolist{margin:0 .625rem;}
+.prolist .t{height:3.5rem; line-height:3.5rem; margin-bottom:.625rem; font-size:1rem; border-bottom:.0625rem #ddd solid; background:url(../../../images/user_menubg.jpg) no-repeat 96.5% center; background-size:2.5%;}
+.prolist .item{margin-bottom:.625rem; padding-bottom:.625rem; border-bottom:.0625rem solid #ddd;}
+.prolist .item .name{line-height:1rem; padding:.3rem 0;}
+.prolist .item .name a{font-size:.875rem; color:#333;}
+.prolist .item .ex .price, .prolist .item .ex .price span{line-height:2.2rem; font-size:1rem; color:#d60707;}
+.prolist .item .ex .price del{ color:#888; margin-left:0.5rem;}
+.prolist .item .ex .price del span{ color:#888;}
+.prolist .item .ex .star{margin-left:.5rem; line-height:2.2rem; color:#e56f1d;}
+.prolist .item .ex .star>span{margin-left:.3rem; font-size:.65rem; color:#828282;}
+.prolist .item .ex .star .review_star{margin-left:0;}
+.prolist .item .ex .star .review_star>span{width:.75rem; height:.75rem; margin-left:.1rem;}
+
+

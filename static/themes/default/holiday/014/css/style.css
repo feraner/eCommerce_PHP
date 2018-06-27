@@ -1,0 +1,46 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+
+/***************************宽屏样式(start)***************************/
+.w_1200 #bodyer, .w_1200 #bodyer .wide{min-width:auto;}
+.w_1200 #footer_outer{min-width:980px;}
+/***************************宽屏样式(end)***************************/
+
+body{background:#fff;}
+#bodyer{background:#fef1bd;}
+#bodyer .wide{position:relative;}
+#bodyer .logo{position:absolute; left:0; top:0;}
+
+#bodyer, #bodyer .wide, #footer_outer{min-width:1200px;}
+
+#main_top{height:820px; cursor:pointer;}
+#main{padding-bottom:40px;}
+
+#main .title_one{height:177px; overflow:hidden;}
+#main .banner_one{height:583px; overflow:hidden; cursor:pointer;}
+
+.pro_list{padding:0 98px;}
+.pro_list .list_head{height:133px; overflow:hidden; margin-top:46px;}
+.pro_list .list_body{background:#fff; padding:6px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+.pro_list .list_border{border:1px #e5d99d solid;}
+.banner_list{padding:0 98px;}
+
+.pro_item{width:215px; overflow:hidden; margin:13px 15px 8px; padding-bottom:9px; border:1px #e0e0e0 solid;}
+.pro_item>dt{padding:10px 14px 5px; text-align:center; height:190px;}
+.pro_item>dt img{max-width:100%; max-height:100%;}
+.pro_item>dd{padding:0 14px;}
+.pro_item .pro_name{line-height:22px; height:44px; overflow:hidden;}
+.pro_item .pro_price{height:17px; font-size:15px; color:#c00; font-weight:bold; height:28px; line-height:28px;}
+.pro_item .pro_view{height:28px; line-height:28px; text-align:center; background:#a40000; color:#fff; font-size:14px;}
+
+.banner_body .list_border{padding:13px 23px 29px 28px;}
+.banner_body .banner_head{height:107px; overflow:hidden; margin-bottom:13px;}
+.banner_body .fl{overflow:hidden;}
+.banner_body .t0{width:401px; height:250px; margin-right:22px; margin-bottom:22px;}
+.banner_body .t1{width:250px; height:250px; margin-bottom:22px;}
+.banner_body .t2{width:250px; height:250px; margin-right:22px;}
+.banner_body .t3{width:401px; height:250px;}
+.banner_body .t4{width:249px; height:522px;}
+.banner_body .banner_box{width:673px; margin-right:17px;}

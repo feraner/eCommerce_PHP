@@ -1,0 +1,26 @@
+/*
+Powered by ueeshop.com		http://www.ueeshop.com
+广州联雅网络科技有限公司		020-83226791
+*/
+#web_template{width:100%; margin:0 auto; overflow:hidden; background:#04618d;}
+#web_template .template_box{position:relative; overflow:hidden;}
+#web_template .img{height:100%; overflow:hidden;}
+#web_template .img img{width:100%; height:100%;}
+#web_template .text a{display:block; width:100%; text-decoration:none; color:#fff; background:#04618d; text-align:center; font-weight:bold;}
+#web_template .mod{width:100%; height:100%; overflow:hidden; position:absolute; left:0; top:0; text-align:center; background:#999; cursor:pointer; z-index:1000; display:none; opacity:0.5; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5;}
+#web_template .current_box{width:100%; height:50px; position:absolute; left:0; top:0; border:5px #54a28f solid; background:#999; cursor:pointer; z-index:10; opacity:0.5; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5;}
+#web_template .t1{height:60px;}
+#web_template .t1 .current_box{width:221px; height:50px;}
+#web_template .t2{height:100px;}
+#web_template .t2 .current_box{width:221px; height:90px;}
+#web_template .t3{height:50px;}
+#web_template .t3 .current_box{width:221px; height:40px;}
+#web_template .template_bottom{background:#15adc5 url(../images/middel_bg.png) no-repeat top center; background-size:contain;}
+#web_template .t4{background:url(../images/banner_0.png) no-repeat top center;}
+#web_template .t5{background:url(../images/banner_1.png) no-repeat top center;}
+#web_template .t4, #web_template .t5{height:122px; background-size:contain;}
+#web_template .t4 .current_box, #web_template .t5 .current_box{width:221px; height:112px;}
+
+#web_template .t2 .text a{height:100px; line-height:100px;}
+#web_template .t3 .text a{height:50px; line-height:50px;}
+#web_template .t4 .text a, #web_template .t5 .text a{height:122px; line-height:122px;}
